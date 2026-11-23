@@ -107,10 +107,10 @@ wpn-17546,https://thepokeplugshop.com/,ok,176 text blocks,2026-11-23,2026-11-23
 wpn-17684,http://FACEBOOK.COM/PACKWARSGAMESTORE,skipped,not read automatically (facebook.com),2026-11-23,
 wpn-17825,http://wpn.wizards.com,skipped,not read automatically (wpn.wizards.com),2026-11-23,
 wpn-17894,https://www.dragonshoard.net/,ok,1 text blocks,2026-11-23,2026-11-23
-wpn-17898,https://www.cardsnmo.com/,ok,548 text blocks,2026-11-23,2026-11-23
+wpn-17898,https://www.cardsnmo.com/,error,HTTP 500,2026-11-23,2026-11-23
 wpn-17899,https://www.thecardwizards.net/,ok,33 text blocks,2026-11-23,2026-11-23
 wpn-17908,http://Thedragonshaunt.com,error,URLError: <urlopen error [Errno -2] Name or service not known>,2026-11-23,
-wpn-18060,http://gamenut.com,robots,disallowed by robots.txt,2026-11-23,2026-11-23
+wpn-18060,http://gamenut.com,ok,12 text blocks,2026-11-23,2026-11-23
 wpn-18169,https://Other-trails.com,ok,54 text blocks,2026-11-23,2026-11-23
 wpn-18190,https://geeksphere.tcgplayerpro.com/,robots,disallowed by robots.txt,2026-11-23,
 wpn-18284,http://www.cosmicokc.com,ok,207 text blocks,2026-11-23,2026-11-23
@@ -225,7 +225,7 @@ wpn-23404,https://ripandcollect.com/,ok,140 text blocks,2026-11-23,2026-11-23
 wpn-23449,http://kurtwaynecomics.com,ok,63 text blocks,2026-11-23,2026-11-23
 wpn-23469,http://magic.wizards.com,skipped,not read automatically (wizards.com),2026-11-23,
 wpn-23472,https://www.nevermorebooksok.com/,ok,40 text blocks,2026-11-23,2026-11-23
-wpn-23542,http://Gamenut.com,robots,disallowed by robots.txt,2026-11-23,2026-11-23
+wpn-23542,http://Gamenut.com,ok,12 text blocks,2026-11-23,2026-11-23
 wpn-23564,https://www.facebook.com/share/1EYKaPN8Gj/,skipped,not read automatically (facebook.com),2026-11-23,
 wpn-23679,https://facebook.com/gametimehv,skipped,not read automatically (facebook.com),2026-11-23,
 wpn-23700,https://www.topshelfhobbies.com/,ok,22 text blocks,2026-11-23,2026-11-23
@@ -238,7 +238,7 @@ wpn-23961,http://magic.wizards.com,skipped,not read automatically (wizards.com),
 wpn-24046,https://www.gamestop.com/,skipped,not read automatically (gamestop.com),2026-11-23,
 wpn-24054,https://www.gamestop.com/,skipped,not read automatically (gamestop.com),2026-11-23,
 wpn-24141,https://joshscards.com,ok,1736 text blocks,2026-11-23,2026-11-23
-wpn-24148,https://letsplaygnh.myshopify.com,ok,219 text blocks,2026-11-23,2026-11-23
+wpn-24148,https://letsplaygnh.myshopify.com,ok,221 text blocks,2026-11-23,2026-11-23
 wpn-24154,https://gamersguildhall.com/,ok,78 text blocks,2026-11-23,2026-11-23
 wpn-24255,https://www.facebook.com/profile.php?id=61583165022490,skipped,not read automatically (facebook.com),2026-11-23,
 wpn-24256,https://www.sanctuarycomicsandgames.com,ok,94 text blocks,2026-11-23,2026-11-23
