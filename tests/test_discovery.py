@@ -152,3 +152,11 @@ def test_osm_shops_and_dedupe():
     assert same_place("Dragon Hobby", 37.75, -97.20, "The Dragon's Lair Hobby", 37.751, -97.201) is False
     assert same_place("Dragon Hobby", 37.75, -97.20, "Dragon Games", 37.755, -97.205) is True
     assert same_place("Alpha", 37.75, -97.20, "Beta", 37.7501, -97.2001) is True
+
+
+def test_osm_coin_shops_are_not_game_stores():
+    from mtg_retail.discovery import osm_relevant
+    assert not osm_relevant("Salt City Coin", "shop=collector")
+    assert not osm_relevant("Heartland Collectibles Gallery & Pawn", "shop=collector")
+    assert osm_relevant("Cards Unlimited and More", "shop=collector")
+    assert osm_relevant("The Burrow", "shop=games") and not osm_relevant("Main Street Antiques", "shop=hobby")

@@ -234,7 +234,7 @@ def osm_stores(fetch_json, cfg: dict, today: date) -> tuple[list[AutoStore], dic
         name = (tags.get("name") or "").strip()
         lat = el.get("lat", (el.get("center") or {}).get("lat"))
         lon = el.get("lon", (el.get("center") or {}).get("lon"))
-        if not name or lat is None or lon is None:
+        if not name or lat is None or lon is None or not osm_relevant(name, f"shop={tags.get('shop', '')}"):
             continue
         miles = miles_between(cfg["center_lat"], cfg["center_lon"], float(lat), float(lon))
         if miles > limit:
@@ -250,6 +250,19 @@ def osm_stores(fetch_json, cfg: dict, today: date) -> tuple[list[AutoStore], dic
             first_seen_on=today.isoformat(), last_seen_on=today.isoformat()))
     return out, {"source": "openstreetmap_overpass", "elements": len(data.get("elements") or []), "kept": len(out),
                  "kept_within_miles": limit, "complete": True}
+
+
+COLLECTOR_OK = re.compile(r"card|game|gaming|tcg|ccg|comic|hobb|toy|dice|collectible", re.I)
+GAMES_WORD = re.compile(r"card|game|gaming|tcg|ccg|comic|dice", re.I)
+NOT_MTG_SHOP = re.compile(r"\b(coins?|bullion|militaria|stamps?|antiques?|records?|vinyl|guns?|pawn)\b", re.I)
+
+
+def osm_relevant(name: str, kind: str) -> bool:
+    """shop=collector in OSM is mostly coin and antique dealers: keep those only if the name suggests cards or
+    games. Any shop whose name says coins / militaria / stamps / pawn is dropped."""
+    if NOT_MTG_SHOP.search(name) and not GAMES_WORD.search(name):
+        return False
+    return kind != "shop=collector" or bool(COLLECTOR_OK.search(name))
 
 
 # ---------- merging and files ----------

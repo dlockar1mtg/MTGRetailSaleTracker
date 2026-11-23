@@ -279,11 +279,13 @@ def _same_store(r: dict, lat: float, lon: float, s: Store, same_place) -> bool:
 
 
 def _add_auto(directory: Path, stores: dict[str, Store], events: dict[str, Event]) -> None:
-    from .discovery import read_rows, same_place
+    from .discovery import osm_relevant, read_rows, same_place
     auto = directory / "auto"
     found = [(r, "wpn") for r in read_rows(auto / "wpn_stores.csv")] + [(r, "osm") for r in read_rows(auto / "osm_stores.csv")]
     newest = max((r["last_seen_on"] for r, _ in found if r.get("last_seen_on")), default="")
     for r, origin in found:
+        if origin == "osm" and not osm_relevant(r["store_name"], r.get("kind", "")):
+            continue
         lat, lon = float(r["latitude"]), float(r["longitude"])
         # Official WPN ids are distinct stores even when close together (two shops in one mall); only compare
         # against hand-entered stores, and OpenStreetMap shops against everything already kept.
