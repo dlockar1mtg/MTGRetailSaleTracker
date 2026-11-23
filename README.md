@@ -22,7 +22,7 @@ It runs independently and publishes versioned exports for the Universal Investme
 
 ## How alerts reach you
 
-Each alert is a GitHub issue opened by the daily workflow. GitHub emails the owner, and the body @mentions them so the email arrives even if repository notifications are quiet.
+Each alert is a GitHub issue opened by the daily workflow. GitHub emails Devon's account (`dlockar1`): each alert issue is assigned to him and @mentions him. (`dlockar1mtg` is the organization that owns the repository; an organization can't be @mentioned, so alerts must name the personal account. That is `github_notify_user` in `config/region.json`.)
 
 - `🃏 MTG SALE: 30% off singles – <store>, <city> – <date>`: a **verified** deal that meets a threshold
 - `📅 MTG SALE ANNOUNCED (details unknown): <store>, <city> – <date>`: a **lead** (for example a calendar that just says "Black Friday Sale!")

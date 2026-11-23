@@ -147,6 +147,11 @@ def notify(dry_run: bool, roundup_mode: str, today: date | None = None) -> int:
         for name, color, description in LABELS.values():
             gh.ensure_label(name, color, description)
         issues = gh.tracker_issues([label[0] for label in LABELS.values()])
+        if user:      # open alerts nobody is assigned to (e.g. sent before alerts were assigned) get the owner, once
+            for issue in issues:
+                if issue.get("state") == "open" and not issue.get("assignees"):
+                    gh.assign(issue["number"], [user])
+                    print(f"ASSIGN   #{issue['number']} to {user}")
         ledger = parse_ledger(issues, {i["number"]: gh.comments(i["number"]) for i in issues})
     actions = plan(assessments, ledger, user, today)
     new_spotted = [a for a in actions if a.kind == "create" and a.issue_kind == "spotted"]
@@ -161,7 +166,7 @@ def notify(dry_run: bool, roundup_mode: str, today: date | None = None) -> int:
                 print(act.body)
             continue
         if act.kind == "create":
-            gh.create_issue(act.title, act.body, [LABELS[act.issue_kind][0]])
+            gh.create_issue(act.title, act.body, [LABELS[act.issue_kind][0]], [user] if user else None)
             sent["created"] += 1
         elif act.kind == "comment":
             gh.comment(act.issue_number, act.body)
@@ -180,7 +185,7 @@ def notify(dry_run: bool, roundup_mode: str, today: date | None = None) -> int:
         else:
             existing = {k for k in ledger if k[1] == "roundup"}
             if (f"roundup-{week}", "roundup") not in existing:
-                gh.create_issue(title, body, [LABELS["roundup"][0]])
+                gh.create_issue(title, body, [LABELS["roundup"][0]], [user] if user else None)
     print(json.dumps({"actions": len(actions), **({} if dry_run else sent),
                       "states": {a.event.event_id: a.state for a in assessments}}, indent=2))
     return 0

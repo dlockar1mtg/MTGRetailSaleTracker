@@ -65,8 +65,15 @@ class GitHub:
     def comments(self, number: int) -> list[str]:
         return [c.get("body") or "" for c in self._pages(f"/issues/{number}/comments")]
 
-    def create_issue(self, title: str, body: str, labels: list[str]) -> int:
-        return self._call("POST", "/issues", {"title": title, "body": body, "labels": labels})["number"]
+    def create_issue(self, title: str, body: str, labels: list[str], assignees: list[str] | None = None) -> int:
+        """Assigning the owner as well as @mentioning them: GitHub emails both "assigned" and "mentioned"."""
+        payload = {"title": title, "body": body, "labels": labels}
+        if assignees:
+            payload["assignees"] = assignees
+        return self._call("POST", "/issues", payload)["number"]
+
+    def assign(self, number: int, assignees: list[str]) -> None:
+        self._call("POST", f"/issues/{number}/assignees", {"assignees": assignees})
 
     def comment(self, number: int, body: str) -> None:
         self._call("POST", f"/issues/{number}/comments", {"body": body})

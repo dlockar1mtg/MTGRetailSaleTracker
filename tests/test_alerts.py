@@ -126,3 +126,15 @@ def test_github_client_needs_a_token(monkeypatch):
     monkeypatch.delenv("GITHUB_TOKEN", raising=False)
     with pytest.raises(GitHubError):
         GitHub("o/r", "")
+
+
+def test_new_issues_are_assigned_to_the_owner():
+    api = FakeAPI({("POST", "/repos/o/r/issues"): (201, {"number": 3})})
+    gh = GitHub("o/r", "t", api="https://api.test", opener=api)
+    assert gh.create_issue("t", "b", ["x"], ["person"]) == 3
+    assert json.loads(api.calls[-1][2])["assignees"] == ["person"]
+
+
+def test_notify_user_is_a_person_not_the_organization():
+    from mtg_retail.core import config
+    assert config()["github_notify_user"] == "dlockar1"     # dlockar1mtg is the organization; it can't be mentioned

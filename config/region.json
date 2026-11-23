@@ -8,7 +8,7 @@
   "threshold_sealed_percent": 20,
   "timezone": "America/Chicago",
   "near_boundary_review_miles": 10,
-  "github_notify_user": "dlockar1mtg",
+  "github_notify_user": "dlockar1",
   "wpn_query": "Wichita, KS",
   "wpn_query_distance_miles": 310,
   "discovery_every_days": 7
