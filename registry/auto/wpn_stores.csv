@@ -1,0 +1,315 @@
+store_id,source,source_id,store_name,address,city,state,postal_code,latitude,longitude,distance_miles,website,phone,kind,first_seen_on,last_seen_on
+wpn-6516,wpn,6516,Wizard's Alley,114 St Francis,Wichita,KS,67202,37.686651,-97.331192,0.1,https://wizardsict.com/,1316-262-6642,standard,2026-11-23,2026-11-23
+wpn-5697,wpn,5697,Mana Vault Casual Gaming and Collectibles,1629 S Meridian Ave,Wichita,KS,67213,37.66478,-97.37144,2.7,https://www.facebook.com/manavaultcasualgaming/,16207781609,standard,2026-11-23,2026-11-23
+wpn-20845,wpn,20845,GameStop - 3203 - Pawnee and Broadway,2570 S Broadway,Wichita,KS,67216,37.646791,-97.334926,2.8,https://www.gamestop.com/,1(316) 266-4307,standard,2026-11-23,2026-11-23
+wpn-13795,wpn,13795,Pink Elephant Games and Hobby,2431 W Pawnee St,Wichita,KS,67213,37.650909,-97.369476,3.3,https://www.facebook.com/p/Pink-Elephant-Games-and-Cafe-100039086185124/,1316-867-4411,standard,2026-11-23,2026-11-23
+wpn-19741,wpn,19741,Legendary Crits Lounge,1309 W 31st St S,Wichita,KS,67217,37.636319,-97.355566,3.8,https://LegendaryCrits.com,1305-803-6556,standard,2026-11-23,2026-11-23
+wpn-16496,wpn,16496,Headshots Arcade Bar,2120 N Woodlawn Blvd,Wichita,KS,67208,37.721564,-97.261556,4.4,http://headshotsbar.com,13162604370,standard,2026-11-23,2026-11-23
+wpn-18190,wpn,18190,Geeksphere,8336 E 21st St N,Wichita,KS,67206,37.724533,-97.240655,5.5,https://geeksphere.tcgplayerpro.com/,1316-491-1103,standard,2026-11-23,2026-11-23
+wpn-14207,wpn,14207,One Drop Game Shop,737 N Maize Rd,Wichita,KS,67212-4501,37.695,-97.46356,7.3,http://onedropgameshop.com/,1316-794-6555,legendary,2026-11-23,2026-11-23
+wpn-18759,wpn,18759,Oliver's Sports,10555 W Maple St,Wichita,KS,67209,37.679226,-97.464891,7.4,http://wpn.wizards.com,13164251938,standard,2026-11-23,2026-11-23
+wpn-17034,wpn,17034,Arena Hobbies,200 N Baltimore Ave,Derby,KS,67037,37.544955,-97.269765,10.4,https://www.facebook.com/arenahobbies,3163527611,standard,2026-11-23,2026-11-23
+wpn-24029,wpn,24029,The Gathering Point LLC,123 N Main St,El Dorado,KS,67042,37.816836,-96.850209,27.7,https://wpn.wizards.com/,13163771187,standard,2026-11-23,2026-11-23
+wpn-5670,wpn,5670,Main St Games,705 Main St,Winfield,KS,67156,37.24207,-96.9977,35.8,https://mainstgames.com/,1620-705-5700,standard,2026-11-23,2026-11-23
+wpn-19494,wpn,19494,Schmabels Family Fun Center,324 N Poplar,South Hutchinson,KS,67505,38.031941,-97.93659,40.8,http://www.schmabels.com,1620-200-7920,standard,2026-11-23,2026-11-23
+wpn-16426,wpn,16426,RED EYE COLLECTIBLES,27 N Main St,Hutchinson,KS,67501-5216,38.05323,-97.93233,41.5,http://wpn.wizards.com,1620-408-3648,standard,2026-11-23,2026-11-23
+wpn-8254,wpn,8254,The Village Geek - McPherson,116 N Main St,McPherson,KS,67460,38.37004,-97.66674,50.6,http://villagegeekgames.com/,620-504-6445,standard,2026-11-23,2026-11-23
+wpn-15405,wpn,15405,Spelbok Games & Comics,106 S Main St,Lindsborg,KS,67456,38.57311,-97.676198,64.0,http://www.spelbok.com/,16205044719,standard,2026-11-23,2026-11-23
+wpn-8239,wpn,8239,Hall Of Heroes - Ponca City,112 N 1st St,Ponca City,OK,74601-4201,36.70452,-97.08394,69.2,https://locator.wizards.com/,1580-765-7437,standard,2026-11-23,2026-11-23
+wpn-12455,wpn,12455,Gamemasters Guild - Tonkawa,99 S 7th St,Tonkawa,OK,74653,36.678412,-97.30888,69.7,https://pcgameguild.carrd.co/,15805570110,standard,2026-11-23,2026-11-23
+wpn-19293,wpn,19293,Gilded Fates,1670 Industrial Rd,Emporia,KS,66801,38.417966,-96.215215,78.9,https://www.facebook.com/gildedfatesllc,16202087005,standard,2026-11-23,2026-11-23
+wpn-23876,wpn,23876,PixelNation,22 E 5th Ave,Emporia,KS,66801-3958,38.40399,-96.17911,79.8,https://www.pixelnation.co,16207797158,standard,2026-11-23,2026-11-23
+wpn-15869,wpn,15869,Collector's Pair-of-Dice,621 E Crawford St,Salina,KS,67401,38.827691,-97.60242,80.2,https://www.facebook.com/profile.php?id=61551427111135,1785-515-2354,standard,2026-11-23,2026-11-23
+wpn-13592,wpn,13592,Hoover House,1123 W Crawford St,Salina,KS,67401-4656,38.82601,-97.62319,80.3,http://hooverhousehobbies.com,+17855152391,standard,2026-11-23,2026-11-23
+wpn-10817,wpn,10817,The Arena,427 S. Broadway Blvd,Salina,KS,67401-3800,38.83357,-97.62446,80.8,http://www.arenaks.com,785-823-3177,standard,2026-11-23,2026-11-23
+wpn-9785,wpn,9785,Mind Sculpt Games,4908 10th St,Great Bend,KS,67530,38.36204,-98.80151,92.7,https://www.facebook.com/mindsculptgames/,620-603-8462,standard,2026-11-23,2026-11-23
+wpn-13749,wpn,13749,Hornet Games,306 Neosho St,Burlington,KS,66839,38.19475,-95.73809,93.6,https://www.facebook.com/HornetGames/,1620-265-0005,standard,2026-11-23,2026-11-23
+wpn-24054,wpn,24054,GameStop - 3092 - Enid S/C,5503 W Owen K Garriott Rd,Enid,OK,73703-6082,36.39014,-97.94559,95.8,https://www.gamestop.com/,1(580) 234-8843,standard,2026-11-23,2026-11-23
+wpn-5755,wpn,5755,Paper Games,574 SE Washington Blvd,Bartlesville,OK,74006,36.74819,-95.93539,100.5,https://www.facebook.com/papergamesok/,1918-876-3651,standard,2026-11-23,2026-11-23
+wpn-21430,wpn,21430,GeekyGami's,2350 SE Washington Blvd,Bartlesville,OK,74006,36.715665,-95.931539,102.1,https://facebook.com/geekygamis,1918-914-3549,standard,2026-11-23,2026-11-23
+wpn-5844,wpn,5844,Knight Arms,113 South Perkins Road,Stillwater,OK,74074,36.12227,-97.05081,109.2,https://www.facebook.com/KnightArmsGameStore/,405-533-3666,standard,2026-11-23,2026-11-23
+wpn-7217,wpn,7217,Goblin Games,515 Fort Riley Blvd,Manhattan,KS,66502,39.173903,-96.564536,110.8,https://www.goblingamesmhk.com/,1785-317-7048,legendary,2026-11-23,2026-11-23
+wpn-9047,wpn,9047,The Village Geek - Manhattan,105 N 3RD ST,Manhattan,KS,66502,39.17981,-96.56036,111.2,http://www.villagegeekgames.com,785-370-3999,standard,2026-11-23,2026-11-23
+wpn-6689,wpn,6689,Cosmic Castle,110 S 18th St,Parsons,KS,67357-3364,37.34042,-95.26243,115.8,,620-717-4105,standard,2026-11-23,2026-11-23
+wpn-21373,wpn,21373,Black Cat Gaming,104 OK-11,Sperry,OK,74073,36.299046,-95.991217,121.1,https://www.facebook.com/people/Black-Cat-Gaming/61587605338957/,1918-405-6161,standard,2026-11-23,2026-11-23
+wpn-21865,wpn,21865,OklaHomies Mobile Gastronomy Lounge,11330 N Garnett Rd,Owasso,OK,74055-4202,36.31905,-95.84831,125.0,https://www.okmobilegastro.com/,1 (918) 504-7048,standard,2026-11-23,2026-11-23
+wpn-18060,wpn,18060,Game Nut Entertainment - Topeka,5119 SW 29th St,Topeka,KS,66614,39.013957,-95.741407,125.7,http://gamenut.com,1785-329-5380,standard,2026-11-23,2026-11-23
+wpn-20393,wpn,20393,Chunky Monkey Cardz,3124 SW 29th St,Topeka,KS,66614,39.015345,-95.716865,126.7,https://www.facebook.com/share/17WitfNMUU/?mibextid=wwXlfr,1785-765-3666,standard,2026-11-23,2026-11-23
+wpn-20836,wpn,20836,GameStop - 3073 - Owasso Market,12401 E 96th St N,Owasso,OK,74055,36.295013,-95.83524,126.7,https://www.gamestop.com/,1(918) 376-2716,standard,2026-11-23,2026-11-23
+wpn-8424,wpn,8424,Gatekeeper Hobbies,1917 SW Gage Blvd,Topeka,KS,66604,39.03244,-95.72569,127.3,http://wpn.wizards.com,1785-232-3429,standard,2026-11-23,2026-11-23
+wpn-13075,wpn,13075,Board Wipe,12656 E 86th PL N,Owasso,OK,74055,36.27929,-95.83445,127.6,http://wpn.wizards.com,1(918) 376-4369,standard,2026-11-23,2026-11-23
+wpn-23700,wpn,23700,Top Shelf Hobbies,119 S Main St,Owasso,OK,74055-3117,36.26447,-95.85461,127.7,https://www.topshelfhobbies.com/,15392085161,standard,2026-11-23,2026-11-23
+wpn-24277,wpn,24277,Rune Works Comics,18 W 41st St S,Sand Springs,OK,74063-2725,36.10435,-96.1203,128.2,https://runeworkscomics.com,19182313496,standard,2026-11-23,2026-11-23
+wpn-21308,wpn,21308,B&D’s Magic Emporium,119 SW 6th Ave,Topeka,KS,66603-3805,39.05161,-95.67441,130.1,http://Bdmagicemporium.com,1785-422-7793,standard,2026-11-23,2026-11-23
+wpn-17908,wpn,17908,Dragons Haunt,1030 N Kansas Ave,Topeka,KS,66608,39.069948,-95.665037,131.4,http://Thedragonshaunt.com,1785-329-5351,standard,2026-11-23,2026-11-23
+wpn-8925,wpn,8925,Dice Addiction,4622 East 11th Street,Tulsa,OK,74112-4214,36.14759,-95.92496,131.7,http://diceaddiction.com,1(918) 932-8226,standard,2026-11-23,2026-11-23
+wpn-12617,wpn,12617,FTW Game Co - Claremore,1209 W Will Rogers Blvd,Claremore,OK,74017,36.31569,-95.62449,133.6,https://ftwgameco.com/,1(918) 965-1049,standard,2026-11-23,2026-11-23
+wpn-14755,wpn,14755,Trade Routes,5625 E 41st St,Tulsa,OK,74135,36.10512,-95.913989,134.4,http://traderoutes.games,19187713811,standard,2026-11-23,2026-11-23
+wpn-21033,wpn,21033,GameStop - 6024 - Tulsa Hills Shopping Center,7386 S Olympia Ave,Tulsa,OK,74132,36.056957,-96.003534,134.4,https://www.gamestop.com/,1(918) 445-7098,standard,2026-11-23,2026-11-23
+wpn-7403,wpn,7403,Dragonslayer Games,3944 S. Hudson Ave,Tulsa,OK,74135-5608,36.10603,-95.91371,134.4,,918-991-0264,standard,2026-11-23,2026-11-23
+wpn-15786,wpn,15786,Safe Room Games,6740 S Lewis Ave,Tulsa,OK,74136,36.064276,-95.958353,135.4,https://www.facebook.com/profile.php?id=100094130080120&mibextid=ZbWKwL,15398671493,standard,2026-11-23,2026-11-23
+wpn-21940,wpn,21940,Planar Games,8714 E 41st St,Tulsa,OK,74145-3310,36.103788,-95.881831,135.5,https://www.planargames.com,1918-300-3636,standard,2026-11-23,2026-11-23
+wpn-11214,wpn,11214,The Gamers Guild - Hays,200 E 8th St,Hays,KS,67601,38.86995,-99.32977,135.8,https://locator.wizards.com,+1785-621-2538,standard,2026-11-23,2026-11-23
+wpn-17825,wpn,17825,2d6 Games,6939 E 71st St,Tulsa,OK,74133,36.061577,-95.89937,137.4,http://wpn.wizards.com,19187648103,standard,2026-11-23,2026-11-23
+wpn-5799,wpn,5799,Alien Games,508 E A Street,Jenks,OK,74037,36.02332,-95.96428,137.5,https://www.facebook.com/aliengames.jenks/,1918-812-9834,standard,2026-11-23,2026-11-23
+wpn-8295,wpn,8295,Wizards Asylum - Tulsa,7165 S Mingo Rd,Tulsa,OK,74133-3242,36.05925,-95.86846,138.5,https://www.wizardscomicsandgames.com/index.php/,1918-250-2077,standard,2026-11-23,2026-11-23
+wpn-19470,wpn,19470,Breakpoint Cards & Collectibles,1241 E Danforth Rd,Edmond,OK,73034,35.668296,-97.463302,139.7,https://www.breakpointokc.com,14052507064,standard,2026-11-23,2026-11-23
+wpn-24587,wpn,24587,Chronoforge,2720 W Kenosha St,Broken Arrow,OK,74012-7027,36.06102,-95.82416,139.8,https://www.facebook.com/61591224513527/,1918-882-6469,standard,2026-11-23,2026-11-23
+wpn-18488,wpn,18488,GameStop - 3887 - Broken Arrow,2419 W Kenosha St,Broken Arrow,OK,74012,36.060078,-95.820077,140.0,https://www.gamestop.com/,1918-459-0074,standard,2026-11-23,2026-11-23
+wpn-14563,wpn,14563,Oinkers Island,745 N Aspen Ave,Broken Arrow,OK,74012,36.05989,-95.81343,140.2,https://www.facebook.com/oinkersisland,1(918) 957-5613,legendary,2026-11-23,2026-11-23
+wpn-22670,wpn,22670,Oinkers Island 2,1408 W Kenosha St,Broken Arrow,OK,74012-8959,36.06157,-95.80927,140.3,http://wpn.wizards.com,1539-367-2435,standard,2026-11-23,2026-11-23
+wpn-19618,wpn,19618,Brick & Board Games and Cards,14010 South Peoria Avenue,Glenpool,OK,74033,35.960572,-95.976566,140.8,https://brickandboardgames.com,1(918)895-5195,standard,2026-11-23,2026-11-23
+wpn-8136,wpn,8136,Edmond Unplugged,117 S Broadway,Edmond,OK,73034-3734,35.6536,-97.48146,140.8,http://www.edmondunplugged.com,405-285-7584,standard,2026-11-23,2026-11-23
+wpn-10277,wpn,10277,Game Nut Entertainment - Lawrence,2329 Iowa St,Lawrence,KS,66046,38.94106,-95.26281,141.6,https://gamenut.tcgplayerpro.com/,1785-856-8770,standard,2026-11-23,2026-11-23
+wpn-15319,wpn,15319,Pack Smashers Cards & Collectibles,105 W 15th St,Edmond,OK,73013,35.638933,-97.485875,141.8,https://www.facebook.com/PackSmashersCards,+1 405-920-6003,standard,2026-11-23,2026-11-23
+wpn-23542,wpn,23542,Game Nut Entertainment - Downtown Lawrence,813 Massachusetts St,Lawrence,KS,66044-2657,38.96885,-95.23614,143.9,http://Gamenut.com,1785-856-1540,standard,2026-11-23,2026-11-23
+wpn-17894,wpn,17894,The Dragon's Hoard - Lawrence,1800 E 23rd St,Lawrence,KS,66046,38.943162,-95.210709,144.0,https://www.dragonshoard.net/,1785-766-9608,standard,2026-11-23,2026-11-23
+wpn-21772,wpn,21772,KTXZ Trading Cards,1617 N Walnut St,Pittsburg,KS,66762-3049,37.42284,-94.70813,144.8,http://wpn.wizards.com,1620-704-8913,standard,2026-11-23,2026-11-23
+wpn-9632,wpn,9632,The Game Shoppe - Pittsburg,913 N Broadway St,Pittsburg,KS,66762-3909,37.4162,-94.70487,145.0,https://thegameshoppe.tcgplayerpro.com/,1620-875-1259,standard,2026-11-23,2026-11-23
+wpn-24154,wpn,24154,The Gamers Guildhall,12409 N Rockwell Ave,Oklahoma City,OK,73142-2704,35.59619,-97.63887,145.5,https://gamersguildhall.com/,14053677023,standard,2026-11-23,2026-11-23
+wpn-21333,wpn,21333,M T Hands,309 N Main St,Miami,OK,74354,36.879448,-94.877791,145.9,http://www.mt-hand.com,1918-541-6730,standard,2026-11-23,2026-11-23
+wpn-12404,wpn,12404,FTW Game Co.,527 S Mill St.,Pryor,OK,74361,36.29697,-95.32129,146.7,https://ftwgameco.com/,1(918) 373-8177,standard,2026-11-23,2026-11-23
+wpn-16341,wpn,16341,Tier 1 Gaming - Miami,1024 E Steve Owens Blvd,Miami,OK,74354,36.870874,-94.866894,146.7,https://www.facebook.com/profile.php?id=100095060102562&mibextid=AEUHqQ,1918-961-7335,standard,2026-11-23,2026-11-23
+wpn-24256,wpn,24256,Village Sanctuary Comics and Games,9420 N May Ave,Oklahoma City,OK,73120-2712,35.56676,-97.56545,147.1,https://www.sanctuarycomicsandgames.com,14054072213,standard,2026-11-23,2026-11-23
+wpn-15486,wpn,15486,Free State Gaming,406 Pennsylvania Ave,Holton,KS,66436,39.463772,-95.734404,150.0,https://Freestategamingllc.com,1785-362-6785,standard,2026-11-23,2026-11-23
+wpn-18284,wpn,18284,Cosmic Collectibles - Oklahoma,5106 N MacArthur Blvd,Warr Acres,OK,73122,35.522997,-97.618605,150.4,http://www.cosmicokc.com,1405-730-6075,standard,2026-11-23,2026-11-23
+wpn-18601,wpn,18601,Super Comic Bros,2531 NW 23rd St,Oklahoma City,OK,73107,35.493531,-97.558182,152.1,https://www.instagram.com/supercomicbros?igsh=OWxoNDEzY3NwM2gy,14058508640,standard,2026-11-23,2026-11-23
+wpn-15979,wpn,15979,Video Games Plus,4557 NW 23rd St,Oklahoma City,OK,73127,35.494211,-97.603257,152.3,http://Facebook.com/vgpokc,1405-252-0746,standard,2026-11-23,2026-11-23
+wpn-21337,wpn,21337,Breakpoint OKC,1609 N Blackwelder Ave,Oklahoma City,OK,73106,35.48545,-97.539145,152.6,https://www.instagram.com/breakpointcardsplaza/?hl=am-et,1405-738-2633,standard,2026-11-23,2026-11-23
+wpn-22599,wpn,22599,Side Quest Game Lounge,1325 N Walker Ave,Oklahoma City,OK,73103-6400,35.48147,-97.52135,152.8,https://www.sidequestokc.com,1405-481-7649,standard,2026-11-23,2026-11-23
+wpn-21707,wpn,21707,Everyday Adventures,1004 N Hudson Ave,Oklahoma City,OK,73102,35.477573,-97.518506,153.0,https://www.everydayadventures.shop/,1405-250-7320,standard,2026-11-23,2026-11-23
+wpn-23210,wpn,23210,GameStop - 3884 - Yukon SWM,1300 W Vandament Ave,Yukon,OK,73099-4400,35.49212,-97.76256,153.6,https://www.gamestop.com/,1(405) 350-1415,standard,2026-11-23,2026-11-23
+wpn-21579,wpn,21579,Got Games,4008 SE 15th St,Del City,OK,73115,35.449378,-97.44207,154.7,https://www.facebook.com/share/19vPBXoCvP/,1405-429-7639,standard,2026-11-23,2026-11-23
+wpn-19833,wpn,19833,GameStop - 3258 - Oklahoma City,1640 S Sooner Rd,Oklahoma City,OK,73115,35.448245,-97.423163,154.8,https://www.gamestop.com/,1(405) 739-0666,standard,2026-11-23,2026-11-23
+wpn-22315,wpn,22315,Tinker Games & Hobby,1805 S Air Depot Blvd,Midwest City,OK,73110,35.44707,-97.40666,154.8,https://www.tinkergamesokc.com,1405-455-6035,standard,2026-11-23,2026-11-23
+wpn-16535,wpn,16535,Primal Nerds,331 Cemetery Rd,Yukon,OK,73099,35.462383,-97.760812,155.6,http://www.primalnerds.com,1405-256-6242,standard,2026-11-23,2026-11-23
+wpn-18316,wpn,18316,Bit Wyvern,105 N Main St,McLoud,OK,74851,35.436292,-97.092083,156.1,http://bit-wyvern.com,405-252-0069,standard,2026-11-23,2026-11-23
+wpn-21105,wpn,21105,GameStop - 7755 - South Santa Fe,7500 S Santa Fe Ave,Oklahoma City,OK,73139,35.39118,-97.511804,159.0,https://www.gamestop.com/,1(405) 634-3129,standard,2026-11-23,2026-11-23
+wpn-8013,wpn,8013,Mandalor's Dreams,2002 S Tyler Ave,Joplin,MO,64804,37.06984,-94.537,159.2,https://www.mandalorsdreams.com/,1417.437.5929,standard,2026-11-23,2026-11-23
+wpn-23472,wpn,23472,Nevermore Books,6 E 3rd St,Grove,OK,74344-7033,36.5933,-94.76888,160.0,https://www.nevermorebooksok.com/,1918-801-1510,standard,2026-11-23,2026-11-23
+wpn-9142,wpn,9142,"Game HQ, Inc.",9118 S Western Ave.,Oklahoma City,OK,73139-2725,35.37573,-97.52806,160.1,http://magic.wizards.com,+1405-691-0509,standard,2026-11-23,2026-11-23
+wpn-7439,wpn,7439,Doom Planet,824 S Main St,Joplin,MO,64801,37.08187,-94.51379,160.2,https://hurleysheroes.com/,1417-782-6642,standard,2026-11-23,2026-11-23
+wpn-20822,wpn,20822,GameStop - 2821 - Shawnee Shopping Center,4903 N Union Ave,Shawnee,OK,74804,35.385686,-96.91932,160.6,https://www.gamestop.com/,1(405) 275-4635,standard,2026-11-23,2026-11-23
+wpn-7646,wpn,7646,Gray Fox Games,804 E 15th St,Joplin,MO,64804,37.074524,-94.505947,160.7,https://www.facebook.com/ChangingHandsBookShoppeJoplin,1417-623-6699,standard,2026-11-23,2026-11-23
+wpn-17244,wpn,17244,Treasured Collectibles,801 E 20th St 7-A,Joplin,MO,64804,37.069862,-94.506307,160.8,http://treasuredcollectibles.shop,1417-254-9033,standard,2026-11-23,2026-11-23
+wpn-14615,wpn,14615,Larry's Game Store,659 N Somerset Ter,Olathe,KS,66062-1265,38.89074,-94.78299,161.2,https://www.larrysgamestore.com/,1913-400-2093,standard,2026-11-23,2026-11-23
+wpn-16691,wpn,16691,Mithril Adventures,215 W 7th St,Okmulgee,OK,74447,35.622528,-95.973466,161.3,https://www.mithriladventures.com,918-200-9685,legendary,2026-11-23,2026-11-23
+wpn-24255,wpn,24255,Brothers' Trading Post,101 N Range Line Rd,Joplin,MO,64801-0013,37.09129,-94.47652,162.0,https://www.facebook.com/profile.php?id=61583165022490,14172913986,standard,2026-11-23,2026-11-23
+wpn-6009,wpn,6009,DZ Comics,625 N Moore Ave,Moore,OK,73160,35.34594,-97.49607,162.0,http://wpn.wizards.com,1405-735-3994,legendary,2026-11-23,2026-11-23
+wpn-17899,wpn,17899,The Card Wizards,2705 S Rangeline Rd,Joplin,MO,64804,37.060813,-94.477548,162.5,https://www.thecardwizards.net/,1417-317-5477,standard,2026-11-23,2026-11-23
+wpn-15655,wpn,15655,5ozKnights,121 W Main St,Hinton,OK,73047,35.471095,-98.356476,163.4,https://storefront.sortswift.com/5ozknights,14055420101,standard,2026-11-23,2026-11-23
+wpn-20537,wpn,20537,Forgotten Labyrinth Game & Hobby Center,1700 S Broadway Ave,Moore,OK,73160,35.322665,-97.485989,163.6,http://facebook.com/ForgottenLabyrinth,1405-237-3008,standard,2026-11-23,2026-11-23
+wpn-21003,wpn,21003,GameStop - 5534 - Riverwalk Center,2712 S Telephone Rd,Moore,OK,73160,35.31382,-97.49315,164.2,https://www.gamestop.com/,1(405) 799-4200,standard,2026-11-23,2026-11-23
+wpn-5639,wpn,5639,Collector's Cache,13354 College Blvd,Lenexa,KS,66210,38.92888,-94.74074,164.5,https://www.collectorscache.com/,1913-338-2273,standard,2026-11-23,2026-11-23
+wpn-16391,wpn,16391,The Guilded Grayland,222 E Main St,Shawnee,OK,74801,35.327652,-96.919823,164.6,http://theguildedgrayland.com,1405-429-044,standard,2026-11-23,2026-11-23
+wpn-8186,wpn,8186,Bibliotech Books and Comics,123 E Main St,Shawnee,OK,74801-6905,35.32733,-96.92109,164.6,https://www.bbcbooksandcomics.com/,1405-275-9494,standard,2026-11-23,2026-11-23
+wpn-23873,wpn,23873,Nerdstalgia Collectibles,14878 Metcalf Ave,Overland Park,KS,66223-2206,38.8588,-94.6691,165.5,http://nerdstalgiacollectibles.com,1913-291-0052,standard,2026-11-23,2026-11-23
+wpn-5988,wpn,5988,The Geekery - Shawnee,12616 W 62nd Terrace,Shawnee,KS,66216,39.01639,-94.73202,168.1,https://www.geekery.biz/,1913-261-9694,legendary,2026-11-23,2026-11-23
+wpn-19275,wpn,19275,Victory Road - Overland Park,8715 Metcalf Ave,Overland Park,KS,66212,38.970928,-94.666752,169.4,https://victoryroadcollections.com,19137357734,standard,2026-11-23,2026-11-23
+wpn-21563,wpn,21563,Mythic Realms Trading Co,536 W Fir Rd,Carthage,MO,64836,37.139849,-94.318217,169.6,https://www.facebook.com/profile.php?id=61586456785874,1417-317-9805,standard,2026-11-23,2026-11-23
+wpn-16628,wpn,16628,DM Dave's Books and Games,122 W Main St,Norman,OK,73069,35.22,-97.444666,170.6,https://www.facebook.com/dmdavesbooksandgames,1405-515-9052,standard,2026-11-23,2026-11-23
+wpn-5699,wpn,5699,Wizards Asylum - Norman,3717 W Main St.,Norman,OK,73072-4639,35.21838,-97.49697,170.8,https://www.facebook.com/wizardsnorman/,1405-292-4263,standard,2026-11-23,2026-11-23
+wpn-20838,wpn,20838,GameStop - 3109 - River City Plaza,930 W Shawnee St,Muskogee,OK,74401,35.771447,-95.369849,171.2,https://www.gamestop.com/,1(918) 682-8256,standard,2026-11-23,2026-11-23
+wpn-21724,wpn,21724,Arcane Spire,1110 W Harmony St,Neosho,MO,64850,36.86947,-94.385468,171.5,https://www.facebook.com/people/Arcane-Spire/61586620094429/#,1408-427-5212,standard,2026-11-23,2026-11-23
+wpn-9996,wpn,9996,Peculiar Games and Hobbies,"361 Legend Ln, Ste C1",Peculiar,MO,64078-2506,38.72181,-94.4566,171.6,https://www.facebook.com/PeculiarGamesAndHobbies/,816-779-4263,standard,2026-11-23,2026-11-23
+wpn-22324,wpn,22324,The Nerdy Smith,424 Lincoln Ave,Hebron,NE,68370-1526,40.16685,-97.5896,171.9,http://wpn.wizards.com,1402-200-2024,standard,2026-11-23,2026-11-23
+wpn-8819,wpn,8819,Mission: Board Games - Mission,5606A Johnson Dr,Mission,KS,66202,39.02246,-94.65054,172.0,https://www.missionboardgames.com/,1 (913) 242-7970,standard,2026-11-23,2026-11-23
+wpn-18779,wpn,18779,Good Games Good Grub,402 W Main St,Henryetta,OK,74437-4242,35.44015,-95.98611,172.2,https://www.facebook.com/p/Good-Games-Good-Grub-61551009733689/,1405-406-7665,standard,2026-11-23,2026-11-23
+wpn-6357,wpn,6357,Gators Games and Hobby,720 Shawnee St,Leavenworth,KS,66048,39.31836,-94.91964,172.3,https://gatorsfeedsyourneeds.com/,1(913) 682-0220,legendary,2026-11-23,2026-11-23
+wpn-10127,wpn,10127,Spanky's Card Shop,9914 Holmes Rd,Kansas City,MO,64131,38.94801,-94.58236,172.5,https://spankyscardshop.com/,1816-941-2702,legendary,2026-11-23,2026-11-23
+wpn-21416,wpn,21416,Port City Cards and Collectibles,803 N York St,Muskogee,OK,74403,35.749731,-95.340675,173.4,https://www.facebook.com/p/Port-City-Cards-Collectibles-61573608765217/,1918-910-3010,standard,2026-11-23,2026-11-23
+wpn-17684,wpn,17684,Pack Wars,112 W Main St,Anderson,MO,64831,36.650747,-94.443638,174.3,http://FACEBOOK.COM/PACKWARSGAMESTORE,1417-845-7225,standard,2026-11-23,2026-11-23
+wpn-23679,wpn,23679,Game Time!,2113 Plaza Dr,Harrisonville,MO,64701-1265,38.6613,-94.36509,174.5,https://facebook.com/gametimehv,18165537170,standard,2026-11-23,2026-11-23
+wpn-19685,wpn,19685,Pawn and Pint,613 Walnut St,Kansas City,MO,64106,39.10581,-94.581345,178.2,https://www.facebook.com/profile.php?id=61577868194488,1816-304-3283,standard,2026-11-23,2026-11-23
+wpn-7423,wpn,7423,Level One Game Shop,"400 Grand Boulevard, Ste 420",Kansas City,MO,64106,39.10944,-94.58149,178.3,http://wpn.wizards.com,1816-482-7702,legendary,2026-11-23,2026-11-23
+wpn-19355,wpn,19355,Still Fond & More,206 S Muskogee Ave,Tahlequah,OK,74464,35.912017,-94.971833,179.1,http://wpn.wizards.com,19185706300,standard,2026-11-23,2026-11-23
+wpn-21736,wpn,21736,Dragonstone Games and Hobbies,131 N Water Ave,Tahlequah,OK,74464,35.913944,-94.969532,179.1,https://www.facebook.com/share/1BGrVfbuBC/,1918-525-9742,standard,2026-11-23,2026-11-23
+wpn-14574,wpn,14574,Brute Squad Entertainment,"7000 NW Prairie View RD, STE 140",Kansas City,MO,64151-3808,39.22245,-94.6506,179.6,https://www.facebook.com/brutesquadentertainment,1816-872-8603,standard,2026-11-23,2026-11-23
+wpn-14123,wpn,14123,Mission: Board Games - KC North,7751 NW Prairie View Road,Kansas City,MO,64151,39.23579,-94.65841,179.8,https://www.missionboardgames.com/,1(816) 214-8554,standard,2026-11-23,2026-11-23
+wpn-16016,wpn,16016,Pulp Fiction Comics & Games,836 SW Blue Pkwy,Lee's Summit,MO,64063,38.909384,-94.39057,180.4,http://pfcomics.com,1816-554-7333,standard,2026-11-23,2026-11-23
+wpn-6180,wpn,6180,C and L Baseball Cards,320 Court Street,Beatrice,NE,68310,40.26588,-96.74917,180.9,,402-228-2280,standard,2026-11-23,2026-11-23
+wpn-13612,wpn,13612,Mindgames and Magic,206 SE 2nd St.,Lees Summit,MO,64063,38.91543,-94.37486,181.3,https://mindgamesandmagic.com/,1816-282-0409,standard,2026-11-23,2026-11-23
+wpn-20725,wpn,20725,GameStop - 675 - Creekwood Commons,215B NE Englewood Rd,KCMO,MO,64118,39.194124,-94.580156,181.6,https://www.gamestop.com/,1(816) 453-7766,standard,2026-11-23,2026-11-23
+wpn-21091,wpn,21091,GameStop - 6993 - Lees Summit,1041 NE Sam Walton Ln,Lee's Summit,MO,64086,38.931292,-94.361089,182.5,https://www.gamestop.com/,1(816) 525-1677,standard,2026-11-23,2026-11-23
+wpn-21796,wpn,21796,Vault 18,311 W Lafayette Ave,Checotah,OK,74426,35.46932,-95.52352,183.1,https://www.facebook.com/profile.php?id=61587499229357,1539-269-3048,standard,2026-11-23,2026-11-23
+wpn-24141,wpn,24141,Josh's Cards,14125 E US Hwy 40,Kansas City,MO,64136,39.033988,-94.413969,183.3,https://joshscards.com,18165036868,standard,2026-11-23,2026-11-23
+wpn-9152,wpn,9152,Action Sports,6041 B NE Antioc Rd.,Gladstone,MO,64119,39.20339,-94.54853,183.4,https://www.action-sportsgames.com/,1816-455-6319,standard,2026-11-23,2026-11-23
+wpn-23765,wpn,23765,Fountain City Collectibles,8034 North Oak Tkwy,Kansas,MO,64118,39.240622,-94.576795,183.6,https://storefront.sortswift.com/fcc,1(816) 442-7020,standard,2026-11-23,2026-11-23
+wpn-10278,wpn,10278,Game Cafe,107 West Lexington Ave,Independence,MO,64050,39.09184,-94.41611,185.2,http://playgamecafe.com,1816-252-7529,legendary,2026-11-23,2026-11-23
+wpn-17499,wpn,17499,Gamers Getaway KC,17601 E US Hwy 40,Independence,MO,64055,39.03274,-94.373095,185.2,http://www.gamersgetawaykc.com,1816-379-6359,standard,2026-11-23,2026-11-23
+wpn-20307,wpn,20307,PackRats - Cards & Collectibles,902 S 9th St,Chickasha,OK,73018,35.041868,-97.944395,185.9,https://www.packrats.cards,1405-256-2562,standard,2026-11-23,2026-11-23
+wpn-24148,wpn,24148,Let's Play! Game and Hobby,11129 N Oak Trfy,Kansas City,MO,64155-1167,39.29596,-94.5749,185.9,https://letsplaygnh.myshopify.com,18162378066,standard,2026-11-23,2026-11-23
+wpn-24579,wpn,24579,The Hobby,20001 E Jackson Dr,Independence,MO,64057-1567,39.04055,-94.34481,186.8,https://www.facebook.com/profile.php?id=61592391294301,1816-313-5453,standard,2026-11-23,2026-11-23
+wpn-20456,wpn,20456,The Block Shop Games,2409 Ponderosa Dr,Chickasha,OK,73018,35.02307,-97.927516,187.1,https://www.facebook.com/people/The-Block-Shop-Games/61569636278194/#,1405-825-3081,standard,2026-11-23,2026-11-23
+wpn-17546,wpn,17546,The Plug Trading Cards and Collectibles,2408 S Hwy 7,Blue Springs,MO,64014,38.994461,-94.27322,188.7,https://thepokeplugshop.com/,18165371516,standard,2026-11-23,2026-11-23
+wpn-8645,wpn,8645,A To Z Comics,1300 SW US 40,Blue Springs,MO,64015,39.00873,-94.27991,188.8,https://www.facebook.com/AtoZComicsBlueSprings/,1816-224-0505,standard,2026-11-23,2026-11-23
+wpn-20773,wpn,20773,GameStop - 1588 - Wilshire Plaza,8416 Church Rd,KCMO,MO,64157,39.246481,-94.462587,188.9,https://www.gamestop.com/,1(816) 407-9786,standard,2026-11-23,2026-11-23
+wpn-20972,wpn,20972,GameStop - 5162 - Garden City Plaza,2204 E Kansas Ave,Garden City,KS,67846,37.975579,-100.842876,192.7,https://www.gamestop.com/,1(620) 272-0559,standard,2026-11-23,2026-11-23
+wpn-22626,wpn,22626,Card Crew HQ,105 SW Eagles Pkwy,Grain Valley,MO,64029-8512,39.01025,-94.19977,192.7,https://www.cardcrewhq.com,‪(816) 408-0320‬,standard,2026-11-23,2026-11-23
+wpn-13077,wpn,13077,Commander Games,900 E. Cleveland Ave,Monett,MO,65708,36.92903,-93.91791,194.7,https://www.facebook.com/commandergamesmonett/,1417-635-1111,legendary,2026-11-23,2026-11-23
+wpn-24455,wpn,24455,Blue Collar Anime,113 S Main St,Elk City,OK,73644-5743,35.41006,-99.40516,195.0,https://wpn.com,15012938759,standard,2026-11-23,2026-11-23
+wpn-11468,wpn,11468,Gear Gaming - Bentonville,1400 SE Walton Blvd,Bentonville,AR,72712,36.333822,-94.19146,196.8,https://bentonville.geargamingstore.com,1479-871-6416,standard,2026-11-23,2026-11-23
+wpn-21603,wpn,21603,Hidden Vault Games,4500 W Walnut St,Rogers,AR,72756,36.33405,-94.180096,197.3,http://Hiddenvaultgames.com,1479-405-2222,standard,2026-11-23,2026-11-23
+wpn-13069,wpn,13069,MTech Cave,713 N 2nd Street,Stilwell,OK,74960,35.82141,-94.62644,197.5,https://mtechcave.com/,1(918) 218-2039,standard,2026-11-23,2026-11-23
+wpn-24368,wpn,24368,Movietown,805 S 2nd St,Stilwell,OK,74960-4821,35.80708,-94.62907,198.1,http://magic.wizards.com,1918-696-8070,standard,2026-11-23,2026-11-23
+wpn-21062,wpn,21062,GameStop - 6557 - Pinnacle Hills,2203 S Promenade Blvd,Rogers,AR,72758,36.308569,-94.173997,198.5,https://www.gamestop.com/,1(479) 246-0238,standard,2026-11-23,2026-11-23
+wpn-20223,wpn,20223,War & Pieces,129 S Washington St,Clinton,MO,64735,38.369814,-93.778135,199.0,http://www.warandpieces.net,660-474-0474,standard,2026-11-23,2026-11-23
+wpn-23848,wpn,23848,Gamber's Games,702 E Ohio St,Clinton,MO,64735-2362,38.36615,-93.76531,199.6,https://www.gambersgames.net,1660-383-1106,standard,2026-11-23,2026-11-23
+wpn-16473,wpn,16473,The Game Box,1717 E Ohio St,Clinton,MO,64735,38.367053,-93.748885,200.5,https://thegamebox.tcgplayerpro.com/,1660-383-1800,standard,2026-11-23,2026-11-23
+wpn-9956,wpn,9956,Chaos Games,106 N Bloomington St,Lowell,AR,72712,36.25539,-94.13787,202.1,http://chaosgamesllc.com,(479) 268-3806,standard,2026-11-23,2026-11-23
+wpn-15875,wpn,15875,Games Explosion,1110 Mathias Dr,Springdale,AR,72762,36.176635,-94.19146,202.3,https://www.facebook.com/profile.php?id=61551904844818,1479-750-0133,standard,2026-11-23,2026-11-23
+wpn-15991,wpn,15991,Final Boss Games,5320 W Sunset Ave STE 172,Springdale,AR,72762,36.178167,-94.190082,202.3,http://FinalBossGames.com,14795022600,legendary,2026-11-23,2026-11-23
+wpn-18169,wpn,18169,Other Trails Coffee and Goods,115 E Broadway Ave,Excelsior Springs,MO,64024,39.342141,-94.222633,203.2,https://Other-trails.com,1816-319-4425,standard,2026-11-23,2026-11-23
+wpn-20202,wpn,20202,Black Flame Books and Games,246 E Broadway Ave,Excelsior Springs,MO,64024,39.342469,-94.221252,203.3,http://wpn.wizards.com,1314-228-4828,standard,2026-11-23,2026-11-23
+wpn-19226,wpn,19226,Captivate Cards & Collectibles,1005 S Elliott Ave,Aurora,MO,65605,36.964835,-93.718432,204.6,Http://magic.wizards.com,1417-440-4079,standard,2026-11-23,2026-11-23
+wpn-7703,wpn,7703,BEARS by the Maul,6302 Wilkerson,Fayetteville,AR,72704,36.12758,-94.16303,205.5,https://bearsinfayettville.tcgplayerpro.com/,1(501) 487-7085,standard,2026-11-23,2026-11-23
+wpn-20793,wpn,20793,GameStop - 2510 - Spring Creek,637 E Joyce Blvd,Fayetteville,AR,72703,36.123042,-94.149057,206.3,https://www.gamestop.com/,1(479) 251-1559,standard,2026-11-23,2026-11-23
+wpn-10428,wpn,10428,Gear Gaming - Fayetteville,3029 N College Ave,Fayetteville,AR,72703,36.107842,-94.148989,206.9,https://fayetteville.geargamingstore.com,1479-276-8110,standard,2026-11-23,2026-11-23
+wpn-21932,wpn,21932,Cards of Pair-O-Dice,117 N Holden St,Warrensburg,MO,64093-1725,38.76377,-93.74016,208.6,http://facebook.com/cardsofpod,1804-661-3784,standard,2026-11-23,2026-11-23
+wpn-5678,wpn,5678,Thompson Productions,207 N Holden St,Warrensburg,MO,64093,38.76438,-93.74007,208.6,https://www.facebook.com/people/Thompson-Productions-LLC/100057517605234/,1660-747-3830,standard,2026-11-23,2026-11-23
+wpn-18539,wpn,18539,Game On - Hastings,4103 Osborne Dr W,Hastings,NE,68901,40.625853,-98.38459,210.8,https://www.gameongames.com,14028340138,standard,2026-11-23,2026-11-23
+wpn-7523,wpn,7523,"C and K Cards, Games, and More",800 E Aldrich,Bolivar,MO,65613,37.59663,-93.4045,214.8,http://www.candktoys.com/,1417-777-0111,legendary,2026-11-23,2026-11-23
+wpn-20303,wpn,20303,Sword and Tower Games,2355 N Center St,Fayetteville,AR,72701,36.03216,-94.036995,215.0,https://www.swordandtower.com,1479-240-2127,standard,2026-11-23,2026-11-23
+wpn-19027,wpn,19027,"Griffin's Keep Cards, Comics, and Games",304 E Jackson St,Willard,MO,65781,37.301483,-93.425111,215.7,https://griffinskeep.us/,1417-425-1313,standard,2026-11-23,2026-11-23
+wpn-15702,wpn,15702,Neverending Game Store II,1206 US-60,Republic,MO,65738,37.129373,-93.459347,215.9,https://www.facebook.com/profile.php?id=61550483741847,14174689413,legendary,2026-11-23,2026-11-23
+wpn-9612,wpn,9612,HobbyTown USA - Lincoln (South),4107 Pioneer Woods Dr,Lincoln,NE,68506,40.77127,-96.6233,216.4,https://www.hobbytown.com/lincoln-s-ne/l126,1402-434-5040,legendary,2026-11-23,2026-11-23
+wpn-17440,wpn,17440,Eureka Springs Gaming,44 Kingshighway,Eureka Springs,AR,72632,36.398802,-93.745545,216.8,https://eurekaspringsgaming.com/,1479-244-5776,standard,2026-11-23,2026-11-23
+wpn-22967,wpn,22967,GameStop - 6811 - Fort Sill,1718 Macomb Rd,Fort Sill,OK,73503-4562,34.67003,-98.40072,216.8,https://www.gamestop.com/,1(580) 353-1064,standard,2026-11-23,2026-11-23
+wpn-15528,wpn,15528,Mana Games Cafe,701 P St Suite 102,Lincoln,NE,68508,40.814497,-96.711071,218.6,http://www.mana-games.com/,14024136967,standard,2026-11-23,2026-11-23
+wpn-22774,wpn,22774,The Card Yard,4600 W St,Lincoln,NE,68503-2832,40.82265,-96.65545,219.6,http://wpn.wizards.com,1402-309-9476,standard,2026-11-23,2026-11-23
+wpn-22953,wpn,22953,GameStop - 3103 - Plaza on Manhattan,3305 N Highway 81,Duncan,OK,73533-8925,34.54328,-97.96707,220.1,https://www.gamestop.com/,1(504) 361-3507,standard,2026-11-23,2026-11-23
+wpn-10149,wpn,10149,Tom's Card Kingdom,1507 NW Sheridan Rd,Lawton,OK,73505,34.62507,-98.42191,220.2,https://www.yelp.com/biz/toms-card-kingdom-lawton,1580-353-7694,standard,2026-11-23,2026-11-23
+wpn-14473,wpn,14473,Collective 365,1415 N Cotner Blvd,Lincoln,NE,68505,40.827517,-96.631022,220.2,https://collectivelnk.tcgplayerpro.com/,1531-249-1617,standard,2026-11-23,2026-11-23
+wpn-20974,wpn,20974,GameStop - 5175 - Lawton Plaza,2413 NW 67th St,Lawton,OK,73505,34.632814,-98.474043,220.5,https://www.gamestop.com/,1(580) 510-0788,standard,2026-11-23,2026-11-23
+wpn-15850,wpn,15850,Decks and Dice,1904 W Broadway Ave,Sulphur,OK,73086,34.506708,-96.992851,220.6,https://decksanddiceok.com/,1580-622-4135,standard,2026-11-23,2026-11-23
+wpn-17073,wpn,17073,Round Table Games,1040 NW 38th St,Lawton,OK,73505,34.620917,-98.439949,220.7,http://www.roundtablegamesok.com,1580-353-9993,standard,2026-11-23,2026-11-23
+wpn-22289,wpn,22289,Merlin's Magic Market,2239 N Highway 81,Duncan,OK,73533-1222,34.53336,-97.96712,220.8,https://www.facebook.com/profile.php?id=100091198005729,405-320-8302,standard,2026-11-23,2026-11-23
+wpn-16859,wpn,16859,Carolina Comics,305 SW C Ave,Lawton,OK,73501,34.605362,-98.392434,221.0,https://www.CarolinaComics.net,15803535164,standard,2026-11-23,2026-11-23
+wpn-21037,wpn,21037,GameStop - 6074 - Sunshine Street Springfield,3530 W Sunshine St,Springfield,MO,65807,37.18245,-93.352529,221.0,https://www.gamestop.com/,1(417) 877-0182,standard,2026-11-23,2026-11-23
+wpn-23469,wpn,23469,The Mana Refuge,1421 NW Great Plains Blvd,Lawton,OK,73505-2843,34.62415,-98.47069,221.0,http://magic.wizards.com,1580-222-4744,standard,2026-11-23,2026-11-23
+wpn-24607,wpn,24607,The Collector's Exchange,6720 NW Cache Rd,Lawton,OK,73505,34.622637,-98.475334,221.2,https://Thecollectorsxchange.com,+15806994975,standard,2026-11-23,2026-11-23
+wpn-16813,wpn,16813,Counter Spell Cards and Games,2602 SW Lee Blvd,Lawton,OK,73505,34.593811,-98.428564,222.3,http://counterspellgames.com,1580-699-2133,standard,2026-11-23,2026-11-23
+wpn-16330,wpn,16330,Dirk's Tavern,210 W Commercial St,Springfield,MO,65803,37.22934,-93.292632,223.7,http://www.dirkstavern.com,1417-890-2027,standard,2026-11-23,2026-11-23
+wpn-14062,wpn,14062,5C Gaming,431 S Jefferson Ave,Springfield,MO,65806,37.205945,-93.289877,224.1,https://5cgaming.com,1417-353-0769,standard,2026-11-23,2026-11-23
+wpn-13649,wpn,13649,Haven Games,106 W Sherman Way,Nixa,MO,65714,37.060587,-93.294577,225.8,https://haven-games.com/,1417-414-0802,standard,2026-11-23,2026-11-23
+wpn-10256,wpn,10256,CollectOmaniacs,2825 S Glenstone Ave,Springfield,MO,65804,37.16191,-93.26483,226.0,https://www.facebook.com/Collectomaniacs,1417-350-1104,standard,2026-11-23,2026-11-23
+wpn-18472,wpn,18472,GameStop - 1676 - Springfield,3011 S Glenstone Ave,Springfield,MO,65804,37.159018,-93.263839,226.1,https://www.gamestop.com/,1417-823-0434,standard,2026-11-23,2026-11-23
+wpn-22278,wpn,22278,The Perk,324 N Main St,Maryville,MO,64468-1644,40.34867,-94.87321,226.3,https://theperkcards.com/,1-816-558-0310,standard,2026-11-23,2026-11-23
+wpn-6635,wpn,6635,Meta Games Unlimited,3309 E Sunshine St,Springfield,MO,65804,37.1804,-93.22762,227.8,https://www.mguinc.com/,1417-881-9390,legendary,2026-11-23,2026-11-23
+wpn-18422,wpn,18422,Kearney Legends Cards & Collectibles,2202 Central Ave,Kearney,NE,68847,40.697865,-99.082078,228.2,https://www.facebook.com/share/16Rxfy6bn7/,1402-460-7110,standard,2026-11-23,2026-11-23
+wpn-6298,wpn,6298,Hawghead Comics,1600 S Greenwood Ave,Fort Smith,AR,72901,35.36806,-94.40404,228.2,https://hawgheadcomics.com/,1479-783-6008,standard,2026-11-23,2026-11-23
+wpn-11463,wpn,11463,Sharp Gaming,923 Louisville St,Fort Smith,AR,72901,35.34324,-94.42578,228.5,https://www.sb-gaming.com/,1479-242-2594,standard,2026-11-23,2026-11-23
+wpn-13874,wpn,13874,Graffiti Games,5108 N 22nd St,Ozark,MO,65721,37.06717,-93.232262,229.0,https://graffitigames.myshopify.com/,1(417)551-4516,standard,2026-11-23,2026-11-23
+wpn-16616,wpn,16616,P&M Gaming,5111 Rogers Ave,Fort Smith,AR,72908,35.36746,-94.376709,229.3,https://www.facebook.com/PieMooreGaming,1479-242-8098,standard,2026-11-23,2026-11-23
+wpn-19104,wpn,19104,Lucky Llama Games,720 N Hwy 71,Alma,AR,72921,35.494712,-94.225186,229.4,https://www.facebook.com/luckyllamatcg,1479-225-9532,standard,2026-11-23,2026-11-23
+wpn-7263,wpn,7263,Game On - Kearney,5012 3rd Ave,Kearney,NE,68845,40.72178,-99.08477,229.7,https://magic.wizards.com/,1308-455-1080,standard,2026-11-23,2026-11-23
+wpn-23564,wpn,23564,Dragon House Games,507 S Ash St,Buffalo,MO,65622-5464,37.64132,-93.1052,231.1,https://www.facebook.com/share/1EYKaPN8Gj/,1417-298-1149,standard,2026-11-23,2026-11-23
+wpn-23404,wpn,23404,Rip and Collect,5991 Grand Slam Loop,Forth Smith,AR,72903,35.325822,-94.374663,231.4,https://ripandcollect.com/,1479-551-0460,standard,2026-11-23,2026-11-23
+wpn-21061,wpn,21061,GameStop - 6527 - Sedalia Square,3400 W Broadway Blvd,Sedalia,MO,65301,38.710811,-93.270367,231.5,https://www.gamestop.com/,1(660) 826-1206,standard,2026-11-23,2026-11-23
+wpn-7177,wpn,7177,Game On - Grand Island,2108 Lawrence Lane,Grand Island,NE,68803,40.94009,-98.38106,231.7,http://www.gameongames.com,308-675-3444,standard,2026-11-23,2026-11-23
+wpn-6744,wpn,6744,G. I. Card Shop,2418 N Webb Rd,Grand Island,NE,68803,40.94535,-98.37967,232.0,http://magic.wizards.com,1308-675-2424,standard,2026-11-23,2026-11-23
+wpn-10137,wpn,10137,Forever 10 Gaming,"1716 W 9th St, Ste 3",Sedalia,MO,65301,38.70405,-93.2485,232.5,,660-851-2201,standard,2026-11-23,2026-11-23
+wpn-16417,wpn,16417,Elysium - Branson,4250 Gretna Rd,Branson,MO,65616,36.65945,-93.25531,235.3,https://www.facebook.com/profile.php?id=61558552395360,1937-369-6594,standard,2026-11-23,2026-11-23
+wpn-21121,wpn,21121,The Legendarie Game Store,903 S Broadway St,Poteau,OK,74932,35.047685,-94.629651,236.3,http://wpn.wizards.com,1918-721-0426,standard,2026-11-23,2026-11-23
+wpn-14940,wpn,14940,The Branson Dragon Game Store,670 Branson Landing Blvd,Branson,MO,65616,36.654873,-93.219813,237.2,http://facebook.com/thebransondragon,14173201086,standard,2026-11-23,2026-11-23
+wpn-17898,wpn,17898,Cards N Mo,111 S Main St,Carrollton,MO,64633,39.357632,-93.495706,237.2,https://www.cardsnmo.com/,1660-329-2948,standard,2026-11-23,2026-11-23
+wpn-16100,wpn,16100,Dice & Dine,103 S Business 65,Branson,MO,65616,36.643868,-93.21856,237.6,http://bransonboardgamecafe.com,1417-973-3113,standard,2026-11-23,2026-11-23
+wpn-18596,wpn,18596,Red River Comics and Collectibles,105 W Commerce St,Altus,OK,73521,34.648935,-99.332304,237.8,https://share.google/bp1TocOvvSfgGCI2f,1708-638-7390,standard,2026-11-23,2026-11-23
+wpn-21420,wpn,21420,A Poindexter's Armory,404 Dallas St,Talihina,OK,74571,34.751271,-95.047939,239.4,http://www.pointdextersarmory.com,1918-268-6307,standard,2026-11-23,2026-11-23
+wpn-17063,wpn,17063,Nerdy Meeple Boardgame Cafe,8 Broadlawn Shops,Ardmore,OK,73401,34.193757,-97.134473,241.6,http://nerdymeeple.com,15806303640,standard,2026-11-23,2026-11-23
+wpn-22553,wpn,22553,Playr's Den,713 N Commerce St,Ardmore,OK,73401-3914,34.18315,-97.14364,242.3,http://playrsedn.com,1580-826-3335,standard,2026-11-23,2026-11-23
+wpn-13254,wpn,13254,Neverending Game Store,"1190 Spur Drive, Suite 100",Marshfield,MO,65706,37.33777,-92.9247,242.6,http://www.neverendinggamestore.com,417-986-8824,legendary,2026-11-23,2026-11-23
+wpn-21832,wpn,21832,Karp and Castle,242 S Main St,Gravois Mills,MO,65037,38.195007,-92.825648,247.9,https://wpn.wizards.com/en/,1573-207-0044,standard,2026-11-23,2026-11-23
+wpn-22905,wpn,22905,Gaming Garage,W Newton St,Versailles,MO,65084,38.4316,-92.85612,248.7,https://gaming-garage-109809.square.site/,1417-292-1098,standard,2026-11-23,2026-11-23
+wpn-7206,wpn,7206,Game On - McCook,220 Westview Plaza,Mccook,NE,69001,40.20145,-100.64485,248.8,http://www.gameongames.com,308-345-8888,standard,2026-11-23,2026-11-23
+wpn-19103,wpn,19103,Alamo Drafthouse Cinema La Vista,12750 Westport Pkwy,La Vista,NE,68138,41.179305,-96.115621,249.8,https://drafthouse.com/omaha/theater-bar/la-vista,1(402) 505-9979,standard,2026-11-23,2026-11-23
+wpn-13166,wpn,13166,Mushyhead Comics,117 W Foster Avenue,Pampa,TX,79065,35.53512,-100.96412,250.4,https://mushyhead.com/,1(806) 370-5858,standard,2026-11-23,2026-11-23
+wpn-9833,wpn,9833,The Game Shoppe - Bellevue,1406 Harlan Drive,Bellevue,NE,68005,41.1419,-95.91161,250.4,,402-292-4263,standard,2026-11-23,2026-11-23
+wpn-22038,wpn,22038,Hobbytown - La Vista,8070 S 84th St,La Vista,NE,68128-3303,41.17671,-96.04558,250.6,http://wpn.wizards.com,1402-597-1888,standard,2026-11-23,2026-11-23
+wpn-10670,wpn,10670,Ground Zero Hobby,794 Fort Crook Rd S,Bellevue,NE,68005-2964,41.15289,-95.92717,250.9,,402-292-3750,standard,2026-11-23,2026-11-23
+wpn-23054,wpn,23054,GameStop - 2844 - Wolf Creek S/C,10531 S 15th St,Bellevue,NE,68123-7706,41.1571,-95.93454,251.0,https://www.gamestop.com/,1(402) 291-1279,standard,2026-11-23,2026-11-23
+wpn-19338,wpn,19338,Ozarks Trading Cards & Video Games,173 S Business Hwy 5,Camdenton,MO,65020,38.006247,-92.74257,251.2,https://www.facebook.com/people/Ozarks-Trading-Cards-Video-Games/61579318171830/?mibextid=wwXIfr&rdid=Ag689Bl8K4PpGU4l&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19JzVEczU2%2F%3Fmibextid%3DwwXIfr,15738732044,standard,2026-11-23,2026-11-23
+wpn-21251,wpn,21251,Cafe Monster Bellevue,2219 Thurston Cir,Bellevue,NE,68005,41.160409,-95.924564,251.4,https://www.facebook.com/search/top?q=cafe%20monster%20bellevue,1-(531)-213-2715,standard,2026-11-23,2026-11-23
+wpn-19115,wpn,19115,Ancient Tomb Cards and Comics,10841 Q St,Omaha,NE,68127,41.204317,-96.083376,251.9,https://www.instagram.com/ancienttombcardsandcomics/,1531-867-3047,standard,2026-11-23,2026-11-23
+wpn-10053,wpn,10053,Ground Zero Hobby - Ralston,5710 S 77th St,Ralston,NE,68127,41.19989,-96.03307,252.4,http://www.gzomaha.com,402-733-7212,standard,2026-11-23,2026-11-23
+wpn-22802,wpn,22802,Fox Den Game & Cafe,219 S Commercial St,Seymour,MO,65746-8743,37.14653,-92.76977,253.0,https://www.facebook.com/FoxDenSeymourMO,417-879-4675,standard,2026-11-23,2026-11-23
+wpn-15603,wpn,15603,Dragon's Lair Comics and Games - Millard,14616 W Center Rd,Omaha,NE,68144,41.23555,-96.142298,253.2,http://www.dragons-lair.com/,1402-895-5653,standard,2026-11-23,2026-11-23
+wpn-8781,wpn,8781,Krypton Comics - Omaha,2809 S 125th St,Omaha,NE,68144,41.23254,-96.10713,253.5,http://kryptoncomicsomaha.com/,1402-391-4131,standard,2026-11-23,2026-11-23
+wpn-22092,wpn,22092,Gunther's Game Corner,301 N Main St,Slater,MO,65349,39.22153,-93.06183,254.1,https://www.facebook.com/GunthersGameCorner,1660-631-0085,standard,2026-11-23,2026-11-23
+wpn-14831,wpn,14831,Cafe Monster,2932 S 84th St,Omaha,NE,68124,41.231742,-96.043252,254.3,http://instagram.com/cafemonsteromaha,15318677335,standard,2026-11-23,2026-11-23
+wpn-21276,wpn,21276,JC Hobby - Elkhorn,20275 Honeysuckle Dr,Omaha,NE,68022,41.276718,-96.232698,254.8,http://wpn.wizards.com,1402-494-6781,standard,2026-11-23,2026-11-23
+wpn-14077,wpn,14077,Toys 4 Life,1536 W Elm St,Lebanon,MO,65536,37.656881,-92.667138,255.0,https://www.facebook.com/share/162Jhsg8SE/?mibextid=LQQJ4d,1417-991-9692,standard,2026-11-23,2026-11-23
+wpn-23449,wpn,23449,Kurt Wayne Comics and Collections,418 E Coolbaugh St,Red Oak,IA,51566-2367,41.00866,-95.22711,255.5,http://kurtwaynecomics.com,1712-458-6148,standard,2026-11-23,2026-11-23
+wpn-23062,wpn,23062,GameStop - 1217 - Westroads Mall,10000 California St,Omaha,NE,68114-2301,41.26642,-96.06716,256.3,https://www.gamestop.com/,1(402) 390-2700,standard,2026-11-23,2026-11-23
+wpn-21257,wpn,21257,Phase One Gaming,7635 Cass St,Omaha,NE,68114-3623,41.26268,-96.03297,256.5,https://phaseonegaming.com,1402-671-5574,standard,2026-11-23,2026-11-23
+wpn-12147,wpn,12147,The Game Shoppe - Omaha,4014 North 144th Steet,Omaha,NE,68116,41.29453,-96.14189,257.2,http://www.thegameshoppe.com,(402)991-8699,standard,2026-11-23,2026-11-23
+wpn-9155,wpn,9155,Dragon's Lair Comics - Omaha,2311 North 90th Street,Omaha,NE,68134,41.28004,-96.05209,257.4,http://www.dragons-lair.com,402-399-9141,standard,2026-11-23,2026-11-23
+wpn-21608,wpn,21608,From The Ashes Games,815 Main St,Trenton,MO,64683,40.074743,-93.618491,258.9,http://magic.wizards.com,1660-233-9763,standard,2026-11-23,2026-11-23
+wpn-22041,wpn,22041,Golden Gryphon Games,717 W Broadway,Council Bluffs,IA,51501-4103,41.26063,-95.85464,259.1,http://wpn.wizards.com,1563-260-5033,standard,2026-11-23,2026-11-23
+wpn-21260,wpn,21260,HZD Cards & Collectibles,709 Mynster St,Council Bluffs,IA,51503,41.26261,-95.853904,259.3,https://www.facebook.com/share/1Aq9WJNFh1/,1402-779-6136,standard,2026-11-23,2026-11-23
+wpn-7661,wpn,7661,EZ Gamer,2462 32nd Ave,Columbus,NE,68601,41.44058,-97.36679,259.3,https://ez-gamer.net/,1402-671-5248,standard,2026-11-23,2026-11-23
+wpn-21596,wpn,21596,Cardboard Collectibles,1317 N 16th St,Council Bluffs,IA,51501,41.274102,-95.867172,259.8,http://www.cardboardcollectiblescb.com,1712-769-3069,standard,2026-11-23,2026-11-23
+wpn-13275,wpn,13275,Annex Games,307 W Main Street,Durant,OK,74701,33.99115,-96.37892,260.9,https://annex.games/,1(580) 9168008,standard,2026-11-23,2026-11-23
+wpn-14995,wpn,14995,Goodland Games,1907 Cherry Ave,Goodland,KS,67735,39.3381,-101.704286,262.5,http://Goodlandgames.square.site,17852533755,standard,2026-11-23,2026-11-23
+wpn-24407,wpn,24407,The Cartoon Cafe,515 N Broad St,Fremont,NE,68025-4930,41.43424,-96.49886,262.7,http://www.cartoon-cafe.com/,14027199499,standard,2026-11-23,2026-11-23
+wpn-18541,wpn,18541,The Game Station,501 W 3rd St,Borger,TX,79007,35.667431,-101.394619,264.9,https://stationgamesstore.com/,1806-341-0760,standard,2026-11-23,2026-11-23
+wpn-22992,wpn,22992,GameStop - 6838 - Sheppard AFB,714 AVE H,Sheppard AFB,TX,76311,33.95619,-98.49348,265.9,https://www.gamestop.com/,1(940) 855-7808,standard,2026-11-23,2026-11-23
+wpn-18973,wpn,18973,Paint Your Peace,1712 Main St,Vernon,TX,76384,34.1534,-99.284774,267.5,https://www.paint-your-peace.com/,19402833046,standard,2026-11-23,2026-11-23
+wpn-17228,wpn,17228,Green Door Collectibles,23847 US-64,Knoxville,AR,72845,35.382265,-93.364365,271.7,http://www.greendoorcollectibles.com,1479-703-8040,standard,2026-11-23,2026-11-23
+wpn-20888,wpn,20888,GameStop - 3869 - Quail Creek Shopping Center,3201 Lawrence Rd,Wichita Falls,TX,76308,33.875106,-98.536591,271.9,https://www.gamestop.com/,1(940) 696-9385,standard,2026-11-23,2026-11-23
+wpn-14152,wpn,14152,Nexus Game Lounge,"3111 Midwestern Pkwy, Ste 520",Wichita Falls,TX,76308,33.86903,-98.53276,272.3,https://www.nexusgamelounge.com/,19407571885,standard,2026-11-23,2026-11-23
+wpn-9627,wpn,9627,Collector's Den,4020 Rhea Rd Ste 4E,Wichita Falls,TX,76308-2736,33.86954,-98.5399,272.3,https://www.facebook.com/collectorsdenwf/,1940-386-9404,standard,2026-11-23,2026-11-23
+wpn-8111,wpn,8111,Griffon Gaming,106 West Jackson Street,Hugo,OK,74743,34.01101,-95.51318,273.6,http://www.griffongaming.com,580-743-8000,standard,2026-11-23,2026-11-23
+wpn-17044,wpn,17044,Krayus Games,430 W Main St,Denison,TX,75020-3169,33.75522,-96.54138,275.2,https://krayusgames.com/,1903-436-2773,standard,2026-11-23,2026-11-23
+wpn-18748,wpn,18748,Mt. Moon Collectibles - Denison,204 W Main St,Denison,TX,75020,33.755087,-96.537221,275.3,http://wpn.wizards.com,19033287681,standard,2026-11-23,2026-11-23
+wpn-8793,wpn,8793,Mena Game Lounge,1100 Hwy 71 N Ste. G,Mena,AR,71953,34.5772,-94.2396,275.5,https://www.facebook.com/MenaGameLounge/,1479-234-3556,standard,2026-11-23,2026-11-23
+wpn-20518,wpn,20518,Wizard's Guildhall: Game and Hobby Store,1153 US-71 S,Mena,AR,71953,34.574386,-94.242047,275.6,https://www.facebook.com/wizardsguildhall,14792-160-421,standard,2026-11-23,2026-11-23
+wpn-9476,wpn,9476,Garner's Games,1431 S. Armstrong Ave,Denison,TX,75020,33.74116,-96.54736,276.2,,903-328-8610,standard,2026-11-23,2026-11-23
+wpn-16224,wpn,16224,Comic Hoarderz,320 Ichord Ave Suite Q,Waynesville,MO,65583,37.808643,-92.225742,279.0,https://www.facebook.com/ComicHoarderz?mibextid=ZbWKwL,15734332747,standard,2026-11-23,2026-11-23
+wpn-22069,wpn,22069,GameStop - 2582- Sherman,4018 US-75 N,Sherman,TX,75090-0529,33.68035,-96.60982,279.8,https://www.gamestop.com/,1903 891-8000,standard,2026-11-23,2026-11-23
+wpn-8699,wpn,8699,Grove Gamers Guild,111 E 2nd St,Mountain Grove,MO,65711,37.130064,-92.262735,280.7,https://www.grovegamersguild.com/,1417-926-0027,standard,2026-11-23,2026-11-23
+wpn-9960,wpn,9960,Valhalla's Gate,2525 Bernadette Dr,Columbia,MO,65203,38.96614,-92.37689,282.6,https://www.valhallasgate.com/,1573-442-9909,standard,2026-11-23,2026-11-23
+wpn-19265,wpn,19265,Mt. Moon Collectibles - Sherman,121 E Wall St,Sherman,TX,75090,33.63781,-96.60891,282.7,http://wpn.wizards.com,14695005308,standard,2026-11-23,2026-11-23
+wpn-23197,wpn,23197,GameStop - 4027 - Columbia Mall,2300 Bernadette Dr,Columbia,MO,65203,38.96372,-92.37326,282.7,https://www.gamestop.com/,1(573) 445-4699,standard,2026-11-23,2026-11-23
+wpn-24046,wpn,24046,GameStop - 6421 - St. Robert Retail Centre,215 St Robert Blvd,St Robert,MO,65584-3324,37.82524,-92.1563,282.8,https://www.gamestop.com/,1(573) 336-2133,standard,2026-11-23,2026-11-23
+wpn-13183,wpn,13183,BK Games,743 Missouri Ave,St Robert,MO,65584,37.80545,-92.145063,283.4,https://www.facebook.com/BKGamesUS/,1(573) 451-2252,standard,2026-11-23,2026-11-23
+wpn-22959,wpn,22959,GameStop - 6804 - Fort Leonard Wood,14145 NORTH DAKOTA AVE,Fort Leonard Wood,MO,65473,37.74,-92.14,283.7,https://www.gamestop.com/,1(573) 329-2399,standard,2026-11-23,2026-11-23
+wpn-22929,wpn,22929,GameStop - 6492 - Stoneridge Village,707 Stoneridge Pkwy,Jefferson City,MO,65109,38.5817,-92.22292,284.3,https://www.gamestop.com/,1(573) 761-3831,standard,2026-11-23,2026-11-23
+wpn-15429,wpn,15429,Hexagon Alley,111 S 9th St,Columbia,MO,65201,38.950292,-92.327804,284.8,http://hexagonalley.com,1573-227-2213,legendary,2026-11-23,2026-11-23
+wpn-17534,wpn,17534,Second Impressions,213 Antique City Dr,Walnut,IA,51577,41.476522,-95.221753,284.8,http://wpn.wizards.com,1712-784-2620,standard,2026-11-23,2026-11-23
+wpn-22459,wpn,22459,ANALOG,218 Antique City Dr,Walnut,IA,51577-2006,41.4767,-95.22256,284.8,https://www.ANALOGWALNUT.Com,1402-577-0784,standard,2026-11-23,2026-11-23
+wpn-11460,wpn,11460,Magelings,"1906 N Providence Rd, Ste C",Columbia,MO,65202,38.97285,-92.33323,285.0,http://www.magelingsgames.com/,1(573) 639-8031,standard,2026-11-23,2026-11-23
+wpn-12553,wpn,12553,Eclipse Books and Comics - AAFES Comic Shop,14145 N Dakota Ave,Fort Leonard Wood,MO,65473,37.763,-92.11324,285.1,https://www.eclipsebookscomics.com/,1573-329-2502,standard,2026-11-23,2026-11-23
+wpn-16547,wpn,16547,Speedforce Internet Cafe,317 Chestnut St,Atlantic,IA,50022,41.407446,-95.013376,285.1,http://wpn.wizards.com,17122496420,standard,2026-11-23,2026-11-23
+wpn-20256,wpn,20256,The Dungeon Card Shop,510 Ellis Blvd,Jefferson City,MO,65101,38.551408,-92.192763,285.5,https://www.facebook.com/profile.php?id=61579404876097,573-462-1502,standard,2026-11-23,2026-11-23
+wpn-12133,wpn,12133,Good Game,407 North Arkansas Ave,Russellville,AR,72801,35.28233,-93.13486,286.2,https://www.facebook.com/GoodGameRsvlAR,1479-219-5162,standard,2026-11-23,2026-11-23
+wpn-22941,wpn,22941,GameStop - 6724 - SWM Broadway Shops,2703 E Broadway,Columbia,MO,65201-6140,38.94764,-92.29759,286.3,https://www.gamestop.com/,1(573) 442-8465,standard,2026-11-23,2026-11-23
+wpn-23927,wpn,23927,Trainer J's Russellville,312 W B St,Russellville,AR,72801-3704,35.27957,-93.1355,286.3,https://wpn.com,1501-733-8063,standard,2026-11-23,2026-11-23
+wpn-13791,wpn,13791,Mimics JC,621 E McCarty St,Jefferson City,MO,65101,38.57084,-92.16589,287.2,http://Mimicsjc.com,1573-462-7680,standard,2026-11-23,2026-11-23
+wpn-23961,wpn,23961,Play It Again Games,115 S Main St,Mountain Home,AR,72653-3071,36.33972,-92.3848,288.2,http://magic.wizards.com,1870-321-1456,standard,2026-11-23,2026-11-23
+wpn-9207,wpn,9207,Legendary Dragon,916 Hwy 62 E,Mountain Home,AR,72653,36.347952,-92.372851,288.7,https://www.facebook.com/GamePortalMH,1870-706-9697,standard,2026-11-23,2026-11-23
+wpn-21356,wpn,21356,The Thrifty Nerd,1322 Bradley Dr,Mountain Home,AR,72653,36.34835,-92.362281,289.2,http://ThriftyNerd.square.site,17272554555,standard,2026-11-23,2026-11-23
+wpn-15444,wpn,15444,Stratagem Hobbies,503 Holder Dr,Houston,MO,65483,37.312722,-91.961284,295.4,http://wpn.wizards.com,14172600875,standard,2026-11-23,2026-11-23
+wpn-17139,wpn,17139,JC Hobby,1110 S 9th St,Norfolk,NE,68701,42.019031,-97.419697,299.3,http://www.jchobby.com,1402-844-9738,standard,2026-11-23,2026-11-23
+wpn-7188,wpn,7188,Game On - North Platte,517 South Dewey St,North Platte,NE,69101,41.12986,-100.76291,300.2,http://www.gameongames.com/,308-221-6966,standard,2026-11-23,2026-11-23
+wpn-16469,wpn,16469,Game Knights,414 N Dewey St,North Platte,NE,69101,41.137013,-100.762068,300.6,http://gameknightsne.com,13082521208,standard,2026-11-23,2026-11-23
+wpn-18626,wpn,18626,Sevier County Cards and Collectibles,1103 N 9th St,De Queen,AR,71832,34.047455,-94.347649,301.8,http://wpn.wizards.com,1870-582-3844,standard,2026-11-23,2026-11-23
+wpn-22800,wpn,22800,Green Token Lounge,12 W 6th St,Fulton,MO,65251-1979,38.84864,-91.94811,302.7,https://www.facebook.com/share/1B6TdPxjEj/,1573-310-6046,standard,2026-11-23,2026-11-23
+wpn-18323,wpn,18323,Cardboard Castle,528 Court St,Fulton,MO,65251,38.848383,-91.947644,302.8,https://www.facebook.com/CardboardCastleFulton,1(573) 220-9610,standard,2026-11-23,2026-11-23
+wpn-15760,wpn,15760,Bright Idea Gaming,1016 E Main St,Linn,MO,65051,38.480045,-91.842033,303.4,https://bright-idea-gaming.square.site/,1573-326-9046,standard,2026-11-23,2026-11-23
+wpn-20890,wpn,20890,GameStop - 3885 - Bishop Commons,201 S Bishop Ave,Rolla,MO,65401,37.941674,-91.776781,303.6,https://www.gamestop.com/,1(573) 458-0008,standard,2026-11-23,2026-11-23
+wpn-14081,wpn,14081,Runcible Games,1107 N Pine St,Rolla,MO,65401,37.952876,-91.771829,303.9,https://www.facebook.com/runciblegames,1417-414-1494,standard,2026-11-23,2026-11-23
+wpn-21139,wpn,21139,Dynasty Toys and Collectibles,613 N Pine St,Rolla,MO,65401,37.948842,-91.771875,303.9,https://Dynastytoystore.com,1573-308-9892,standard,2026-11-23,2026-11-23
+wpn-5947,wpn,5947,Eclipse Books and Comics,814 N Pine St,ROLLA,MO,65401,37.95005,-91.77151,303.9,https://www.eclipsebookscomics.com/,1573-364-4301,standard,2026-11-23,2026-11-23
+wpn-17126,wpn,17126,"C7 - Bricks, Mini Figs, Toys, Gaming, Collectibles and Crafts",3504 US-63,West Plains,MO,65775,36.783136,-91.891208,305.6,http://www.c7wholesale.com,1417-293-3889,standard,2026-11-23,2026-11-23
+wpn-21747,wpn,21747,Treasure Hunt Games - Amarillo,3801 Olsen Blvd,Amarillo,TX,79109,35.184682,-101.882644,306.4,https://www.facebook.com/p/Treasure-Hunt-Games-Amarillo-61585200945417/,1806-576-4306,standard,2026-11-23,2026-11-23
+wpn-13755,wpn,13755,Day 2 Cards and Games,2503 SW 45th Ave,Amarillo,TX,79110,35.163577,-101.864894,306.5,http://wpn.wizards.com,1806-410-1092,standard,2026-11-23,2026-11-23
+wpn-9139,wpn,9139,12052 Recycled Entertainment,4310 Western St,Amarillo,TX,79109-6036,35.16722,-101.88568,307.3,https://magic.wizards.com,1(806) 553-0697,standard,2026-11-23,2026-11-23
+wpn-24146,wpn,24146,Legacy Collectibles,706 W Walnut St,Decatur,TX,76234-1216,33.23505,-97.59321,308.0,https://www.facebook.com/profile.php?id=61589576824174,19038208791,standard,2026-11-23,2026-11-23
+wpn-21036,wpn,21036,GameStop - 6072 - University Dr Denton,2710 W University Dr,Denton,TX,76201,33.230309,-97.167311,308.1,https://www.gamestop.com/,1(940) 483-9891,standard,2026-11-23,2026-11-23
+wpn-6840,wpn,6840,Grumpy's Comics,111 E University Dr,Denton,TX,76209,33.231216,-97.131523,308.1,http://Grumpyscomicsdenton.com,1940-591-9771,standard,2026-11-23,2026-11-23
+wpn-16276,wpn,16276,Uprising Cards and Collectibles,108 W Harrison St,Kirksville,MO,63501,40.195854,-92.583638,308.3,https://www.facebook.com/people/Uprising-cards-and-collectibles/61555205313333/,1660-654-1141,standard,2026-11-23,2026-11-23
+wpn-7550,wpn,7550,The Book Nook,203 Washington Ave,West Plains,MO,65775,36.72921,-91.85255,308.6,,417-257-7962,standard,2026-11-23,2026-11-23
+wpn-16320,wpn,16320,Trade Shop LLC,11350 US-380,Cross Roads,TX,76227,33.226228,-96.986931,308.8,http://www.TradeShop.com,19404001976,standard,2026-11-23,2026-11-23
+wpn-20802,wpn,20802,GameStop - 2607 - Amarillo Plaza,7401 SW 45th Ave,Amarillo,TX,79119,35.161109,-101.921391,309.2,https://www.gamestop.com/,1(806) 352-4497,standard,2026-11-23,2026-11-23
+wpn-8902,wpn,8902,More Fun Comics and Games - Denton,103 W Hickory St,Denton,TX,76201,33.21426,-97.13304,309.2,https://locator.wizards.com,1 940-387-5893,standard,2026-11-23,2026-11-23

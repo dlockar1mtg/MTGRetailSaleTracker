@@ -1,0 +1,25 @@
+{
+  "attempted_on": "2026-11-23",
+  "sources": {
+    "wpn": {
+      "source": "wpn_locator",
+      "query": "Wichita, KS",
+      "query_distance_miles": 310,
+      "total_results": 314,
+      "pins": 314,
+      "pages": 32,
+      "failed_pages": [],
+      "listings_with_detail": 314,
+      "kept_within_miles": 310,
+      "kept": 314,
+      "complete": true
+    },
+    "osm": {
+      "error": "OpenStreetMap (Overpass) unavailable: https://overpass.kumi.systems/api/interpreter: TimeoutError: The read operation timed out"
+    }
+  },
+  "problems": [
+    "OpenStreetMap: OpenStreetMap (Overpass) unavailable: https://overpass.kumi.systems/api/interpreter: TimeoutError: The read operation timed out"
+  ],
+  "generated_on": null
+}
