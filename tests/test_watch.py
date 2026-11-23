@@ -189,3 +189,20 @@ def test_auto_store_matching_a_hand_entered_store_by_website_or_city_name_is_not
     write_rows(reg_dir / "auto" / "wpn_stores.csv", AUTO_FIELDS, rows)
     reg = load(reg_dir)
     assert set(reg.stores) == {"hand-entered", "wpn-3"}
+
+
+def test_one_detection_per_page_and_a_new_discount_is_an_update(tmp_path):
+    lines = ["Black Friday Sale! · Log in", "Black Friday Sale! · Search", "25% off Magic singles Friday"]
+    first = merge_detections([], [_result("s1", "https://a/", lines)], TODAY)
+    assert len(first) == 1 and first[0]["headline"] == "25% off · Black Friday"
+    assert first[0]["detection_id"].startswith("auto-s1-") and first[0]["detection_id"].endswith("-202611")
+    same = merge_detections(first, [_result("s1", "https://a/", lines[::-1])], date(2026, 11, 24))
+    assert [r["detection_id"] for r in same] == [first[0]["detection_id"]] and same[0]["version"] == first[0]["version"]
+    bigger = merge_detections(same, [_result("s1", "https://a/", ["40% off Magic singles Friday"])], date(2026, 11, 25))
+    assert bigger[0]["detection_id"] == first[0]["detection_id"] and bigger[0]["version"] != first[0]["version"]
+    assert bigger[0]["first_seen_on"] == "2026-11-23"
+
+
+def test_magic_exclusions_are_flagged():
+    (s,) = find_sales(["BLACK FRIDAY SALE · Buy One Get One 50% Off Storewide · Excludes Sealed MtG, Games Workshop"], True)
+    assert s.mtg == "excluded"

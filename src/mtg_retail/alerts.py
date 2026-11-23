@@ -104,7 +104,8 @@ def spotted_section(a: Assessment) -> list[str]:
     ev = e.evidence[0]
     mtg = e.notes.replace("mtg_context=", "")
     mtg_line = {"yes": "the text mentions Magic / singles / sealed",
-                "storewide": "storewide wording; Magic is not named (this is a Wizards Play Network store)"}.get(mtg, mtg)
+                "storewide": "storewide wording; Magic is not named (this is a Wizards Play Network store)",
+                "excluded": "**the text excludes some Magic product** — check what is still covered"}.get(mtg, mtg)
     return [
         f"**{a.store.store_name} — {a.store.city}, {a.store.state}** · {a.distance_miles:.0f} miles from Wichita",
         f"> {ev.summary}",
@@ -128,7 +129,7 @@ def body_for(a: Assessment, notify_user: str, today: date) -> str:
             f"Detection `{e.event_id}` · sent {today.isoformat()}",
             "",
             f"@{notify_user}" if notify_user else "",
-            f"<!-- mtg-retail-alert event={e.event_id} kind=spotted version=1 -->",
+            f"<!-- mtg-retail-alert event={e.event_id} kind=spotted version={e.alert_version} -->",
         ]
         return "\n".join(parts).strip() + "\n"
     if a.alert_kind == "verified":
@@ -185,13 +186,14 @@ def plan(assessments: list[Assessment], ledger: dict[tuple[str, str], IssueState
     actions: list[Action] = []
     for a in assessments:
         eid = a.event.event_id
-        version = "1" if a.alert_kind == "spotted" else str(a.event.terms_version)
+        version = a.event.alert_version if a.alert_kind == "spotted" else str(a.event.terms_version)
         if a.alert_kind:
             existing = ledger.get((eid, a.alert_kind))
             if existing is None:
                 actions.append(Action("create", a.alert_kind, eid, title_for(a), body_for(a, notify_user, today)))
             elif version not in existing.versions and existing.state == "open":
-                body = (f"**Update:** the terms changed (version {version}).\n\n" + body_for(a, notify_user, today))
+                what = "the page's sale wording changed" if a.alert_kind == "spotted" else f"the terms changed (version {version})"
+                body = (f"**Update:** {what}.\n\n" + body_for(a, notify_user, today))
                 actions.append(Action("comment", a.alert_kind, eid, body=body, issue_number=existing.number))
             if a.alert_kind == "verified":
                 lead = ledger.get((eid, "lead"))
@@ -227,7 +229,7 @@ def digest(actions: list[Action], by_event: dict[str, Assessment], notify_user: 
     for a in rows:
         parts += [f"### {a.event.title} – {a.store.store_name}, {a.store.city}", *spotted_section(a), ""]
     parts += [f"@{notify_user}" if notify_user else ""]
-    parts += [f"<!-- mtg-retail-alert event={a.event.event_id} kind=spotted version=1 -->" for a in rows]
+    parts += [f"<!-- mtg-retail-alert event={a.event.event_id} kind=spotted version={a.event.alert_version} -->" for a in rows]
     title = f"\U0001F50E {len(rows)} POSSIBLE MTG SALES (found automatically, unverified) – {today.strftime('%b %-d')}"
     return Action("create", "spotted", "digest", title, "\n".join(parts).strip() + "\n")
 

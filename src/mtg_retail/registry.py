@@ -112,6 +112,7 @@ class Event:
     notes: str
     terms: list[Term] = field(default_factory=list)
     evidence: list[Evidence] = field(default_factory=list)
+    alert_version: str = ""          # automatic finds: changes when the page's discount or sale name changes
 
     @property
     def terms_version(self) -> int:
@@ -284,7 +285,10 @@ def _add_auto(directory: Path, stores: dict[str, Store], events: dict[str, Event
     newest = max((r["last_seen_on"] for r, _ in found if r.get("last_seen_on")), default="")
     for r, origin in found:
         lat, lon = float(r["latitude"]), float(r["longitude"])
-        if r["store_id"] in stores or any(_same_store(r, lat, lon, s, same_place) for s in stores.values()):
+        # Official WPN ids are distinct stores even when close together (two shops in one mall); only compare
+        # against hand-entered stores, and OpenStreetMap shops against everything already kept.
+        against = [x for x in stores.values() if x.origin == "manual" or origin == "osm"]
+        if r["store_id"] in stores or any(_same_store(r, lat, lon, x, same_place) for x in against):
             continue
         current = r.get("last_seen_on") == newest
         wpn = origin == "wpn"
@@ -306,7 +310,7 @@ def _add_auto(directory: Path, stores: dict[str, Store], events: dict[str, Event
         events[r["detection_id"]] = Event(
             event_id=r["detection_id"], store_id=r["store_id"], title=r["headline"], start_date=first, end_date=end,
             local_hours="", timezone="America/Chicago", review_status=AUTO_STATUS, first_seen_on=first,
-            last_checked_on=last, notes=f"mtg_context={r['mtg_context']}",
+            last_checked_on=last, notes=f"mtg_context={r['mtg_context']}", alert_version=r.get("version") or "1",
             evidence=[Evidence(evidence_id=f"ev-{r['detection_id']}"[:64], event_id=r["detection_id"],
                                source_type="store_website", url=r["url"], retrieved_on=last, access_status="ok",
                                method="automatic_page_check", confidence="low", summary=r["snippet"])])

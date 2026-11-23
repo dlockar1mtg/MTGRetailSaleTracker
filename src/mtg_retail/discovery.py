@@ -202,26 +202,31 @@ def wpn_stores(fetcher: Fetcher, cfg: dict, today: date) -> tuple[list[AutoStore
 
 
 def overpass_query(cfg: dict) -> str:
-    meters = int((cfg["radius_miles"] + cfg.get("near_boundary_review_miles", 10)) * 1609.344)
-    around = f"(around:{meters},{cfg['center_lat']},{cfg['center_lon']})"
-    return (f'[out:json][timeout:180];(nwr["shop"="games"]{around};nwr["shop"="hobby"]{around};'
-            f'nwr["shop"="collector"]{around};nwr["shop"="books"]["books"~"comic"]{around};'
-            f'nwr["shop"="comics"]{around};);out center tags;')
+    """A bounding box around the circle (much lighter for Overpass than a 500 km "around"); distance is
+    filtered here afterwards."""
+    miles = cfg["radius_miles"] + cfg.get("near_boundary_review_miles", 10)
+    dlat = miles / 69.0
+    dlon = miles / (69.0 * math.cos(math.radians(cfg["center_lat"])))
+    box = (f"({cfg['center_lat'] - dlat:.4f},{cfg['center_lon'] - dlon:.4f},"
+           f"{cfg['center_lat'] + dlat:.4f},{cfg['center_lon'] + dlon:.4f})")
+    return (f'[out:json][timeout:240];(nwr["shop"="games"]{box};nwr["shop"="hobby"]{box};'
+            f'nwr["shop"="collector"]{box};nwr["shop"="books"]["books"~"comic"]{box};'
+            f'nwr["shop"="comics"]{box};);out center tags;')
 
 
 def osm_stores(fetch_json, cfg: dict, today: date) -> tuple[list[AutoStore], dict]:
     """`fetch_json(url, query) -> dict` posts the Overpass query (tests pass a fake)."""
     query = overpass_query(cfg)
-    last_error = ""
+    errors = []
     data = None
     for endpoint in OVERPASS:
         try:
             data = fetch_json(endpoint, query)
             break
         except Exception as exc:  # noqa: BLE001 - try the next public endpoint
-            last_error = f"{endpoint}: {type(exc).__name__}: {str(exc)[:160]}"
+            errors.append(f"{endpoint}: {type(exc).__name__}: {str(exc)[:120]}")
     if data is None:
-        raise DiscoveryError(f"OpenStreetMap (Overpass) unavailable: {last_error}")
+        raise DiscoveryError("OpenStreetMap (Overpass) unavailable: " + "; ".join(errors))
     limit = cfg["radius_miles"] + cfg.get("near_boundary_review_miles", 10)
     out = []
     for el in data.get("elements") or []:

@@ -37,6 +37,8 @@ NAMED = re.compile(r"\b(black\s+friday|cyber\s+monday|small\s+business\s+saturda
 MTG = re.compile(r"\b(magic(?::|\s+the\s+gathering)?|mtg|singles|commander\s+(?:deck|precon)|booster|collector\s+booster|"
                  r"play\s+booster|secret\s+lair|sealed)\b", re.I)
 MAGIC_NAMED = re.compile(r"\b(magic(?::|\s+the\s+gathering)?|mtg|secret\s+lair|commander)\b", re.I)
+EXCLUDES_MAGIC = re.compile(r"\b(?:exclud\w*|except|not\s+including|does\s+not\s+apply\s+to)\b[^.!?]{0,80}?"
+                            r"\b(magic|mtg|singles|sealed)\b", re.I)
 STOREWIDE = re.compile(r"\b(everything|store[\s-]?wide|site[\s-]?wide|entire\s+store|all\s+(?:items|products|"
                        r"merchandise|in[\s-]stock)|whole\s+store)\b", re.I)
 OTHER_GAMES = re.compile(r"\b(pok[eé]mon|yu-?gi-?oh|lorcana|warhammer|one\s+piece|flesh\s+and\s+blood|digimon|"
@@ -150,7 +152,9 @@ def find_sales(blocks: list[str], wpn_store: bool) -> list[Snippet]:
         text = " · ".join(context)
         percents = tuple(p for piece in run for p in _percents(piece))
         named = next((m.group(1) for piece in run for m in [NAMED.search(piece)] if m), "")
-        if MAGIC_NAMED.search(text) or (MTG.search(text) and not OTHER_GAMES.search(text)):
+        if EXCLUDES_MAGIC.search(text):
+            mtg = "excluded"                    # e.g. "Excludes sealed MtG": still worth a look, flagged
+        elif MAGIC_NAMED.search(text) or (MTG.search(text) and not OTHER_GAMES.search(text)):
             mtg = "yes"
         elif STOREWIDE.search(text) or named:
             mtg = "storewide"
@@ -213,25 +217,45 @@ def check_sources(fetcher: Fetcher, sources: list[tuple[str, str, bool]], worker
 
 
 DETECTION_FIELDS = ["detection_id", "store_id", "url", "headline", "snippet", "percents", "named_sale", "mtg_context",
-                    "first_seen_on", "last_seen_on", "active"]
+                    "version", "first_seen_on", "last_seen_on", "active"]
 CHECK_FIELDS = ["store_id", "url", "status", "detail", "last_checked_on", "last_ok_on"]
+CONTEXT_RANK = {"yes": 0, "storewide": 1, "excluded": 2}
+
+
+def summarize(snippets: list[Snippet]) -> dict:
+    """One detection per store page: the page's sale wording, best first."""
+    ordered = sorted(snippets, key=lambda x: (CONTEXT_RANK.get(x.mtg, 2), -max(x.percents or (0,)), x.text))
+    percents = sorted({p for x in snippets for p in x.percents})
+    named = next((x.named for x in ordered if x.named), "")
+    bits = []
+    if percents:
+        bits.append(f"{percents[-1]}% off" if len(percents) == 1 else f"{percents[0]}-{percents[-1]}% off")
+    if named:
+        bits.append(re.sub(r"\s+", " ", named).title())
+    headline = " · ".join(bits) or "sale"
+    signature = "|".join([headline.lower(), ordered[0].mtg])
+    return {"headline": headline, "snippet": " … ".join(x.text for x in ordered[:3])[:900],
+            "percents": " ".join(map(str, percents)), "named_sale": named, "mtg_context": ordered[0].mtg,
+            "version": hashlib.sha256(signature.encode()).hexdigest()[:8]}
 
 
 def merge_detections(previous: list[dict], results: list[CheckResult], today: date) -> list[dict]:
-    """A detection stays active while its page still shows it. A page that could not be read this run leaves
-    its detections as they were (a transient error is not the end of a sale)."""
+    """One detection per store page while that page shows sale wording. The id carries the month it was first
+    seen, so next year's sale on the same page is a new alert. A page that could not be read this run leaves
+    its detection as it was (a transient error is not the end of a sale)."""
     rows = {r["detection_id"]: dict(r) for r in previous}
+    active_for = {(r["store_id"], r["url"]): r["detection_id"] for r in previous if r.get("active") == "yes"}
     read_ok = {(r.store_id, r.url) for r in results if r.status == "ok"}
     current = set()
     for r in results:
-        for s in r.snippets:
-            did = f"auto-{r.store_id}-{s.key}"[:64]
-            current.add(did)
-            row = rows.get(did) or {"detection_id": did, "store_id": r.store_id, "url": r.url,
-                                    "first_seen_on": today.isoformat()}
-            row.update(headline=s.headline, snippet=s.text, percents=" ".join(map(str, s.percents)),
-                       named_sale=s.named, mtg_context=s.mtg, last_seen_on=today.isoformat(), active="yes")
-            rows[did] = row
+        if not r.snippets:
+            continue
+        did = active_for.get((r.store_id, r.url)) or \
+            f"auto-{r.store_id}-{hashlib.sha256(r.url.encode()).hexdigest()[:6]}-{today:%Y%m}"[:64]
+        current.add(did)
+        row = rows.get(did) or {"detection_id": did, "store_id": r.store_id, "url": r.url, "first_seen_on": today.isoformat()}
+        row.update(summarize(r.snippets), last_seen_on=today.isoformat(), active="yes")
+        rows[did] = row
     for did, row in rows.items():
         if did not in current and (row["store_id"], row["url"]) in read_ok:
             row["active"] = "no"

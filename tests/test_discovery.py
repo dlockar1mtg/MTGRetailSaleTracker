@@ -144,7 +144,7 @@ def test_osm_shops_and_dedupe():
         calls.append(url)
         if len(calls) == 1:
             raise TimeoutError("busy")
-        assert 'shop"="games"' in query and "around:498" in query
+        assert 'shop"="games"' in query and "(33.1944,-103.0074,42.1800,-91.6528)" in query
         return data
     stores, info = osm_stores(fake, CFG, TODAY)
     assert [s.store_id for s in stores] == ["osm-n7"] and len(calls) == 2

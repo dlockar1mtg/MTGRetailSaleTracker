@@ -56,38 +56,47 @@ def discover(force: bool, today: date | None = None) -> int:
     cfg = config()
     today = today or local_today(cfg)
     manifest = _manifest()
-    last = manifest.get("generated_on")
-    if not force and last and (today - date.fromisoformat(last)).days < cfg.get("discovery_every_days", 7):
-        print(f"Store discovery ran {last}; next due in {cfg.get('discovery_every_days', 7)} days. Skipping.")
-        return 0
+    every = cfg.get("discovery_every_days", 7)
+    prior = manifest.get("sources", {})
+
+    def due(name: str) -> bool:
+        last = prior.get(name, {}).get("generated_on")
+        return force or not last or (today - date.fromisoformat(last)).days >= every
     fetcher = Fetcher(min_interval=2.0)
-    out = {"attempted_on": today.isoformat(), "sources": {}}
+    out = {"attempted_on": today.isoformat(), "sources": dict(prior)}
     problems = []
-    try:
-        stores, info = wpn_stores(fetcher, cfg, today)
-        write_rows(AUTO / "wpn_stores.csv", AUTO_FIELDS, [s.row() for s in merge_previous(stores, AUTO / "wpn_stores.csv")])
-        out["sources"]["wpn"] = info
-        if not info["complete"]:
-            problems.append(f"WPN locator incomplete: {info['failed_pages'] or 'pin count differs from total'}")
-    except DiscoveryError as exc:
-        problems.append(f"WPN locator: {exc}")
-        out["sources"]["wpn"] = {"error": str(exc), **manifest.get("sources", {}).get("wpn", {})}
+    if due("wpn"):
+        try:
+            stores, info = wpn_stores(fetcher, cfg, today)
+            write_rows(AUTO / "wpn_stores.csv", AUTO_FIELDS, [s.row() for s in merge_previous(stores, AUTO / "wpn_stores.csv")])
+            out["sources"]["wpn"] = {**info, "generated_on": today.isoformat()}
+            if not info["complete"]:
+                problems.append(f"WPN locator incomplete: {info['failed_pages'] or 'pin count differs from total'}")
+                out["sources"]["wpn"]["generated_on"] = prior.get("wpn", {}).get("generated_on")   # retry tomorrow
+        except DiscoveryError as exc:
+            problems.append(f"WPN locator: {exc}")
+            out["sources"]["wpn"] = {**prior.get("wpn", {}), "error": str(exc)}
+    else:
+        print(f"WPN store list is from {prior['wpn']['generated_on']}; refreshed every {every} days.")
 
     def overpass(url: str, query: str) -> dict:
         req = urllib.request.Request(url, data=urllib.parse.urlencode({"data": query}).encode(),
                                      headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=200) as resp:
+        with urllib.request.urlopen(req, timeout=260) as resp:
             return json.loads(resp.read())
-    try:
-        stores, info = osm_stores(overpass, cfg, today)
-        write_rows(AUTO / "osm_stores.csv", AUTO_FIELDS, [s.row() for s in merge_previous(stores, AUTO / "osm_stores.csv")])
-        out["sources"]["osm"] = info
-    except DiscoveryError as exc:
-        problems.append(f"OpenStreetMap: {exc}")
-        out["sources"]["osm"] = {"error": str(exc)}
+    if due("osm"):
+        try:
+            stores, info = osm_stores(overpass, cfg, today)
+            write_rows(AUTO / "osm_stores.csv", AUTO_FIELDS, [s.row() for s in merge_previous(stores, AUTO / "osm_stores.csv")])
+            out["sources"]["osm"] = {**info, "generated_on": today.isoformat()}
+        except DiscoveryError as exc:
+            problems.append(f"OpenStreetMap: {exc}")
+            out["sources"]["osm"] = {**prior.get("osm", {}), "error": str(exc)}
+    else:
+        print(f"OpenStreetMap shop list is from {prior['osm']['generated_on']}; refreshed every {every} days.")
     out["problems"] = problems
-    # A failed run keeps the old date, so discovery tries again tomorrow instead of in a week.
-    out["generated_on"] = today.isoformat() if not problems else manifest.get("generated_on")
+    # Each source keeps its own date; a failed source keeps its old one, so it is retried tomorrow.
+    out["generated_on"] = max((v.get("generated_on") or "" for v in out["sources"].values()), default="") or None
     (AUTO / "discovery_manifest.json").write_text(json.dumps(out, indent=2) + "\n")
     print(json.dumps(out, indent=2))
     for problem in problems:
