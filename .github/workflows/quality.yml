@@ -1,0 +1,26 @@
+name: Registry quality
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e '.[dev]'
+      - run: pytest -q
+      - run: python -m mtg_retail.cli init-db
+      - run: python -m mtg_retail.cli validate
+      - run: python -m mtg_retail.cli export
+      - uses: actions/upload-artifact@v4
+        with:
+          name: registry-contract-preview
+          path: output/

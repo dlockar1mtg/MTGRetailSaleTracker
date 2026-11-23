@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "mtg-retail-sale-tracker"
+version = "0.1.0"
+description = "Governed MTG retailer and sale registry"
+requires-python = ">=3.11"
+dependencies = ["duckdb>=1.1,<2"]
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.8,<1"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]

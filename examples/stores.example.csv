@@ -1,0 +1,2 @@
+store_name,address,city,state,latitude,longitude,is_example,verification_status
+Fictional Demo Card Shop,100 Example Street,Wichita,KS,37.6872,-97.3301,true,candidate
