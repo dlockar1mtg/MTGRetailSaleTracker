@@ -1,17 +1,22 @@
 name: MTG sale alerts
 
-# Sends each due alert exactly once as a GitHub issue (GitHub emails the owner), and a roundup on Sundays.
-# Runs daily, and whenever the registry changes on main so a newly verified sale goes out right away.
+# Daily: refresh the store lists (weekly), read every store's own page for sales, commit what changed in
+# registry/auto/, then send each due alert exactly once as a GitHub issue (GitHub emails the owner), and a
+# roundup on Sundays. Also runs whenever the registry, config or collector code changes on main.
 on:
   schedule:
     - cron: "7 14 * * *"      # 8:07 AM Central in winter (9:07 AM during daylight time)
   push:
     branches: [main]
-    paths: ["registry/**", "config/**"]
+    paths: ["registry/**", "config/**", "src/**", ".github/workflows/daily-alerts.yml"]
   workflow_dispatch:
     inputs:
       dry_run:
         description: "Show what would be sent without opening issues"
+        type: boolean
+        default: false
+      rediscover:
+        description: "Refresh the store lists now (normally weekly)"
         type: boolean
         default: false
       roundup:
@@ -21,7 +26,7 @@ on:
         default: auto
 
 permissions:
-  contents: read
+  contents: write     # commits registry/auto/ (store lists, page checks, detections)
   issues: write
 
 # One alert run at a time, never cancelled midway: the issue ledger must not be read by two runs at once.
@@ -35,7 +40,7 @@ env:
 jobs:
   alerts:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
@@ -44,6 +49,23 @@ jobs:
           cache: pip
       - run: pip install -e '.[dev]'
       - run: pytest -q
+      - name: Refresh the store lists (weekly)
+        run: python -m mtg_retail.cli discover ${{ inputs.rediscover && '--force' || '' }}
+      - name: Check stores' pages for sales
+        run: python -m mtg_retail.cli watch
+      - name: Save what changed
+        if: ${{ !inputs.dry_run }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add registry/auto
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -q -m "Store lists and page checks $(date -u +%F)"
+          for attempt in 1 2 3; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep $((attempt * 10))
+          done
+          echo "::error::Could not push registry/auto changes"; exit 1
       - name: Send due alerts
         env:
           GITHUB_TOKEN: ${{ github.token }}

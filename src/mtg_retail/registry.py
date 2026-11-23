@@ -7,12 +7,23 @@ change is a reviewed commit with history, and each run rebuilds its working data
   events.csv    one row per sale event (a campaign at one store over a date window)
   terms.csv     category-level terms of an event (singles / sealed), versioned
   evidence.csv  every observation backing an event (URL or user screenshot, when, how, confidence)
+  sources.csv   optional: extra pages to check automatically for a store (event calendar, sales page)
+
+Machine-maintained files in registry/auto/ (written by the daily workflow, never edited by hand):
+
+  wpn_stores.csv   every Wizards Play Network store within the radius, from the official store locator
+  osm_stores.csv   game / hobby / comic shops mapped in OpenStreetMap (candidates: Magic not confirmed)
+  detections.csv   possible sales found on stores' own pages (become AUTO_DETECTED events)
+  checks.csv       when each page was last read, and whether it could be
+
+A store in stores.csv wins over the same shop found automatically (same place, or within a mile with a shared
+name word), so hand-entered details are never overwritten.
 """
 from __future__ import annotations
 
 import csv
 from dataclasses import dataclass, field
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 import re
 
@@ -24,6 +35,8 @@ YES_NO_UNKNOWN = {"yes", "no", "unknown"}
 PRECISIONS = {"address", "city"}
 # The reviewer's record of where an event stands. EXPIRED and the verified sub-states are derived, not entered.
 REVIEW_STATUSES = {"ANNOUNCED_TERMS_UNKNOWN", "PENDING_VERIFICATION", "VERIFIED", "SOURCE_INACCESSIBLE", "CANCELLED"}
+AUTO_STATUS = "AUTO_DETECTED"          # set only by the automatic checks (registry/auto/detections.csv)
+ACTIVE_DETECTION_DAYS = 7              # a detection still on the page counts as live for a week after each sighting
 CATEGORIES = {"singles", "sealed"}
 WHERE = {"in_store", "online", "both", "unknown"}
 SOURCE_TYPES = {"store_website", "store_calendar", "facebook_post", "facebook_image", "instagram_post",
@@ -54,6 +67,8 @@ class Store:
     website: str
     notes: str
     last_verified_on: date | None
+    origin: str = "manual"           # manual | wpn | osm
+    source_id: str = ""
 
 
 @dataclass(frozen=True)
@@ -107,6 +122,7 @@ class Event:
 class Registry:
     stores: dict[str, Store]
     events: dict[str, Event]
+    sources: list[tuple[str, str]] = field(default_factory=list)
 
 
 def _rows(path: Path) -> list[dict[str, str]]:
@@ -223,7 +239,77 @@ def load(directory: Path = REGISTRY) -> Registry:
     for event in events.values():
         if not event.evidence:
             raise RegistryError(f"event {event.event_id} has no evidence row; every event needs at least one")
-    return Registry(stores=stores, events=events)
+    _add_auto(directory, stores, events)
+    return Registry(stores=stores, events=events, sources=_sources(directory, stores))
+
+
+def _sources(directory: Path, stores: dict[str, Store]) -> list[tuple[str, str]]:
+    """Every page to check automatically: each store's website, plus registry/sources.csv."""
+    out = [(s.store_id, s.website) for s in stores.values() if s.website and s.verification_status != "closed"]
+    path = directory / "sources.csv"
+    if path.is_file():
+        for n, r in enumerate(_rows(path), start=2):
+            if r["store_id"] not in stores:
+                raise RegistryError(f"sources.csv row {n}: unknown store_id {r['store_id']!r}")
+            if not r["url"].startswith(("https://", "http://")):
+                raise RegistryError(f"sources.csv row {n}: url must start with http(s)://")
+            out.append((r["store_id"], r["url"]))
+    return list(dict.fromkeys(out))
+
+
+def _host(url: str) -> str:
+    from urllib.parse import urlsplit
+    host = urlsplit(url or "").netloc.lower().removeprefix("www.")
+    generic = ("facebook.com", "instagram.com", "gamestop.com", "wizards.com", "linktr.ee", "tcgplayerpro.com")
+    return "" if not host or any(host == g or host.endswith("." + g) for g in generic) else host
+
+
+def _same_store(r: dict, lat: float, lon: float, s: Store, same_place) -> bool:
+    """An automatically found shop that is already in the registry: same place, same website, or (for a store
+    entered with only a city-level location) a shared name word within 25 miles."""
+    from .discovery import _tokens
+    from .geo import miles_between
+    if same_place(r["store_name"], lat, lon, s.store_name, s.latitude, s.longitude):
+        return True
+    if _host(r.get("website", "")) and _host(r.get("website", "")) == _host(s.website):
+        return True
+    return (s.location_precision == "city" and miles_between(lat, lon, s.latitude, s.longitude) <= 25
+            and bool(_tokens(r["store_name"]) & _tokens(s.store_name)))
+
+
+def _add_auto(directory: Path, stores: dict[str, Store], events: dict[str, Event]) -> None:
+    from .discovery import read_rows, same_place
+    auto = directory / "auto"
+    found = [(r, "wpn") for r in read_rows(auto / "wpn_stores.csv")] + [(r, "osm") for r in read_rows(auto / "osm_stores.csv")]
+    newest = max((r["last_seen_on"] for r, _ in found if r.get("last_seen_on")), default="")
+    for r, origin in found:
+        lat, lon = float(r["latitude"]), float(r["longitude"])
+        if r["store_id"] in stores or any(_same_store(r, lat, lon, s, same_place) for s in stores.values()):
+            continue
+        current = r.get("last_seen_on") == newest
+        wpn = origin == "wpn"
+        note = (f"Wizards store locator, WPN store {r['source_id']} ({r['kind']})" if wpn else
+                f"OpenStreetMap {r['kind']} ({r['source_id']}); Magic not confirmed") + (
+                f"; phone {r['phone']}" if r.get("phone") else "") + ("" if current else f"; not listed since {r['last_seen_on']}")
+        stores[r["store_id"]] = Store(
+            store_id=r["store_id"], store_name=r["store_name"], address=r["address"], city=r["city"], state=r["state"],
+            latitude=lat, longitude=lon, location_precision="address", wpn_status="wpn_verified" if wpn else "wpn_unknown",
+            sells_singles="unknown", sells_sealed="unknown",
+            verification_status="verified" if wpn and current else "candidate", website=r.get("website", ""), notes=note,
+            last_verified_on=date.fromisoformat(r["last_seen_on"]) if r.get("last_seen_on") else None, origin=origin,
+            source_id=r["source_id"])
+    for r in read_rows(auto / "detections.csv"):
+        if r["store_id"] not in stores or r["detection_id"] in events:
+            continue
+        first, last = date.fromisoformat(r["first_seen_on"]), date.fromisoformat(r["last_seen_on"])
+        end = last + timedelta(days=ACTIVE_DETECTION_DAYS) if r["active"] == "yes" else last
+        events[r["detection_id"]] = Event(
+            event_id=r["detection_id"], store_id=r["store_id"], title=r["headline"], start_date=first, end_date=end,
+            local_hours="", timezone="America/Chicago", review_status=AUTO_STATUS, first_seen_on=first,
+            last_checked_on=last, notes=f"mtg_context={r['mtg_context']}",
+            evidence=[Evidence(evidence_id=f"ev-{r['detection_id']}"[:64], event_id=r["detection_id"],
+                               source_type="store_website", url=r["url"], retrieved_on=last, access_status="ok",
+                               method="automatic_page_check", confidence="low", summary=r["snippet"])])
 
 
 def _fail(message: str):

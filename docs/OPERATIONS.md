@@ -11,6 +11,19 @@ GitHub Actions runners keep nothing between runs, so everything durable is plain
 | `terms.csv` | category of an event (`singles` or `sealed`) | `discount_percent` (blank if unknown), `mtg_eligible` (yes/no/unknown), conditions, exclusions, `where`, `verified` (yes/no), `terms_version` |
 | `evidence.csv` | observation | `source_type`, `url` (required except owner screenshots/reports), `retrieved_on`, `access_status`, `confidence`, summary |
 
+## Automatic files (registry/auto/, written by the daily workflow)
+
+| File | What | Refreshed |
+|---|---|---|
+| `wpn_stores.csv` | every WPN store within 310 miles (official locator) | weekly |
+| `osm_stores.csv` | game / hobby / comic shops from OpenStreetMap (candidates) | weekly |
+| `checks.csv` | each page checked, its status (ok / skipped / robots / blocked / error) and last good read | daily |
+| `detections.csv` | possible sales found on those pages (quoted text, first/last seen, still showing?) | daily |
+| `discovery_manifest.json` | last discovery: counts, completeness, problems | weekly |
+
+Don't edit these by hand. To correct a store, add it to `stores.csv` (it then replaces the automatic entry). To watch an
+extra page, such as a store's events or sales page, add a row to `registry/sources.csv` (`store_id,url,notes`).
+
 ## Event states
 
 You set `review_status` in `events.csv`; the tracker derives the rest.
@@ -22,6 +35,7 @@ You set `review_status` in `events.csv`; the tracker derives the rest.
 | `VERIFIED` | terms confirmed from the evidence | becomes **VERIFIED_QUALIFYING** (🃏 deal) if a verified, MTG-eligible term meets its threshold; else **VERIFIED_BELOW_THRESHOLD** or **VERIFIED_NOT_APPLICABLE** (no alert; an open lead is closed) |
 | `SOURCE_INACCESSIBLE` | the source can't be checked | none |
 | `CANCELLED` | the store cancelled | open issues get one "Cancelled" comment and close |
+| `AUTO_DETECTED` | set by the daily checks only | 🔎 possible sale; closes a week after it leaves the page |
 
 Any event whose `end_date` has passed is **EXPIRED**; its open issues close quietly. Stores outside 300 miles and `closed` stores never alert.
 
@@ -34,7 +48,7 @@ Any event whose `end_date` has passed is **EXPIRED**; its open issues close quie
 
 ## Running it by hand
 
-Actions → **MTG sale alerts** → *Run workflow*. Use **dry_run** to see the would-be issues in the log without opening any, and **roundup = force** to send a roundup now.
+Actions → **MTG sale alerts** → *Run workflow*. Tick **rediscover** to refresh the store lists now instead of weekly. Use **dry_run** to see the would-be issues in the log without opening any, and **roundup = force** to send a roundup now.
 
 ## When something fails
 

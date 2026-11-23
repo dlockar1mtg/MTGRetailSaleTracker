@@ -7,17 +7,18 @@ Tracks Magic: The Gathering retailers and their sales within **300 straight-line
 
 It runs independently and publishes versioned exports for the Universal Investment Platform (UIP) to read later.
 
-## Status (v0.2, Nov 2026)
+## Status (v0.3, Nov 2026)
 
 | Works now | Not yet |
 |---|---|
-| Reviewed registry of stores, sale events, terms and evidence (`registry/*.csv`) | Automatic store discovery (WPN locator, directories) |
-| State rules: announced / pending / verified qualifying / below threshold / not applicable / expired / cancelled | Automatic checking of store websites and calendars |
-| Alerts as GitHub issues, each sent exactly once, plus a Sunday roundup | Reading Facebook/Instagram automatically (mostly blocked; report what you see instead) |
-| "Report an MTG sale" issue form for sales you spot | UIP ingestion (the export is a contract preview) |
-| Daily run, plus a run whenever the registry changes; pinned versions; monthly Dependabot | Geocoding (store locations are city-level until then) |
+| **Every WPN store** within the radius from Wizards' official store locator, refreshed weekly (~290 stores) | Reading Facebook / Instagram (login walls): report what you see with the form |
+| Game, hobby and comic shops from OpenStreetMap as candidates | Reading sale *images* (flyers, calendar pictures) |
+| **Daily automatic checks** of every store's own website for sale wording, as "possible sale" alerts | Turning an automatic find into a verified deal without a person checking it |
+| Reviewed registry of stores, sale events, terms and evidence (`registry/*.csv`) | UIP ingestion (the export is a contract preview) |
+| Alerts as GitHub issues, each sent once, plus a Sunday roundup with coverage counts | |
+| "Report an MTG sale" issue form; pinned versions; monthly Dependabot | |
 
-**An empty alert list means nothing was found, not that nothing exists.** Every roundup states the coverage.
+**An empty alert list means nothing was found, not that nothing exists.** Every roundup states the coverage: how many stores and pages were checked, and how many couldn't be read.
 
 ## How alerts reach you
 
@@ -25,6 +26,7 @@ Each alert is a GitHub issue opened by the daily workflow. GitHub emails the own
 
 - `🃏 MTG SALE: 30% off singles – <store>, <city> – <date>`: a **verified** deal that meets a threshold
 - `📅 MTG SALE ANNOUNCED (details unknown): <store>, <city> – <date>`: a **lead** (for example a calendar that just says "Black Friday Sale!")
+- `🔎 POSSIBLE MTG SALE (found automatically, unverified): 25% off · Black Friday – <store>, <city>`: sale wording found on a store's own website, quoted with the link. When one run finds more than six at once, they arrive as one digest issue.
 - `📋 MTG weekly roundup – week of <date>`: Sundays
 
 The issues are also the "already sent" ledger. A sale is announced once, a real change (higher discount, new dates) adds one update comment, and a cancellation or the sale ending closes the issue.

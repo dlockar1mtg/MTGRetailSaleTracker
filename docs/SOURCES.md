@@ -1,13 +1,56 @@
-# Source access and provenance policy
+# Sources, access and provenance
 
-Primary discovery: https://locator.wizards.com/ (official Wizards Store & Event Locator). WPN is not a complete census of all MTG sellers.
+Nothing here logs in, sends cookies, solves challenges, or retries around a refusal. Every automated request identifies
+itself (`MTGRetailSaleTracker/0.3 (+https://github.com/dlockar1mtg/mtgretailsaletracker)`), obeys robots.txt, and
+waits between requests to the same host.
 
-**Do not assume a public bulk API exists.** Confirm whether an official export, documented API, or permitted public browsing workflow is available. Record permission, access restrictions, collection timestamp, URL and pagination strategy. No bypass of authentication, robots restrictions, or rate limits.
+## Stores
 
-Secondary sources: official store websites, event calendars, publicly indexed social posts, independent retailer directories. Public social content may be inaccessible or incomplete; never claim comprehensive Facebook/Instagram coverage.
+**Wizards Play Network (official), weekly.** The public Store & Event Locator search page:
+`https://locator.wizards.com/search?searchType=stores&query=Wichita%2C+KS&distance=310&page=N`.
 
-Sale verification: retain source URL, observed date, event dates, exact product category, percentage, exclusions, and review status. A promotion without clear dates or percentage remains a candidate, not a verified alert.
+- Basis: the locator's own sitemap (`/sitemap/en.xml`) lists `/search?searchType=stores...` pages for crawling. Its
+  robots.txt allows everything except `/api/` and `/auth/`, and we use neither.
+- One page carries every store's map pin (WPN id, name, coordinates, address). Full listings (website, phone) are
+  paged ten at a time, so a run is about 32 requests, two seconds apart.
+- The page embeds its data as a React Router turbo-stream, which `discovery.py` decodes. If Wizards changes the page,
+  discovery reports a problem, keeps last week's list, and the alerts keep running.
+- Checked on 2026-11-23: 314 stores within 310 miles of Wichita, 292 within 300.
+- WPN is not a census of every Magic seller.
 
-Store identity: prefer authoritative IDs when provided, otherwise stable normalized name/address identity with human review of collisions and relocations.
+**OpenStreetMap, weekly.** Shops tagged `shop=games`, `shop=hobby`, `shop=collector`, `shop=comics`, or comic
+bookshops, via the Overpass API. Data © OpenStreetMap contributors, ODbL. These are *candidates*: OSM does not say
+whether a shop sells Magic.
 
-Daily checks must distinguish `no qualifying deals` from `collector failed` and `not configured`.
+**The owner's reports and stores.csv.** Hand-entered stores always win over an automatic match: same place, same
+website, or a shared name word within 25 miles of a city-level location.
+
+## Sales
+
+**Each store's own website, daily** (`watch.py`). The tracker reads each listed website plus any extra pages in
+`registry/sources.csv`, extracts the visible text, and looks for sale wording:
+- percentages of at least 15 ("25% off", "save 30%"), or
+- named sales (Black Friday, Cyber Monday, anniversary, holiday, clearance, storewide ...).
+
+Lines about other games only are dropped. Storewide wording counts for WPN and hand-entered stores. For OSM-only
+shops, the text must name Magic.
+
+**Not read automatically:**
+- Facebook, Instagram, X, TikTok, Discord, Linktree: login walls, and automated reading isn't permitted.
+- GameStop and other chain-wide sites: no local sales.
+- Pages whose robots.txt says no, or that refuse the request.
+
+Those stores still reach the tracker through the "Report an MTG sale" form.
+
+**What an automatic find is:** a quoted snippet with its URL and dates seen. It's sent as "🔎 POSSIBLE MTG SALE (found
+automatically, unverified)", never as a verified deal. Percentages, dates and Magic eligibility in a snippet are
+quoted, not checked. A sale becomes verified only when it's entered in `registry/events.csv` and `terms.csv`, with
+`verified=yes` and `mtg_eligible=yes`.
+
+## Coverage
+
+Every Sunday roundup reports:
+- the store counts by source and when discovery last ran;
+- how many pages were read, not readable, refused, or unreachable.
+
+An empty list means nothing was found. It is never proof that no sale exists.

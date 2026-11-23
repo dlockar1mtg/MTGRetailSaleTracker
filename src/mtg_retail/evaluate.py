@@ -31,7 +31,7 @@ class Assessment:
     near_boundary: bool
     state: str
     qualifying_terms: tuple[Term, ...]
-    alert_kind: str | None  # "verified", "lead" or None
+    alert_kind: str | None  # "verified", "lead", "spotted" (found automatically, unverified) or None
 
 
 def qualifies(term: Term, cfg: dict) -> bool:
@@ -66,6 +66,8 @@ def assess(event: Event, store: Store, cfg: dict, today: date) -> Assessment:
             kind = "verified"
         elif state in LEAD_STATES:
             kind = "lead"
+        elif state == "AUTO_DETECTED":
+            kind = "spotted"
     return Assessment(event, store, distance, in_radius, near, state, winners, kind)
 
 
