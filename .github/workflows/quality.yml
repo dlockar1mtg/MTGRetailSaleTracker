@@ -1,25 +1,33 @@
 name: Registry quality
+
+# Tests, registry validation and the UIP contract preview on every push and pull request.
+# Alerts are sent by daily-alerts.yml, not here.
 on:
   push:
   pull_request:
-  schedule:
-    - cron: '0 14 * * *'
   workflow_dispatch:
+
 permissions:
   contents: read
+
+env:
+  PIP_CONSTRAINT: requirements-lock.txt
+
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
+          cache: pip
       - run: pip install -e '.[dev]'
       - run: pytest -q
-      - run: python -m mtg_retail.cli init-db
-      - run: python -m mtg_retail.cli validate
-      - run: python -m mtg_retail.cli export
+      - run: python -m mtg_retail.cli check-registry
+      - run: python -m mtg_retail.cli export --out output
+      - run: python -m mtg_retail.cli notify --dry-run --roundup force
       - uses: actions/upload-artifact@v4
         with:
           name: registry-contract-preview

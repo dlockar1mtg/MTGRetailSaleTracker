@@ -1,0 +1,43 @@
+name: Report an MTG sale
+description: Saw a sale (a Facebook calendar, a flyer, a post)? Report it here and it gets added to the registry.
+title: "Sale report: <store>, <city> – <date>"
+labels: ["sale-report"]
+body:
+  - type: input
+    id: store
+    attributes:
+      label: Store
+      placeholder: The Gathering Point
+    validations:
+      required: true
+  - type: input
+    id: place
+    attributes:
+      label: City, state
+      placeholder: El Dorado, KS
+    validations:
+      required: true
+  - type: input
+    id: dates
+    attributes:
+      label: Sale date(s)
+      placeholder: Fri Nov 27, 2026 (hours if known)
+    validations:
+      required: true
+  - type: textarea
+    id: terms
+    attributes:
+      label: What does it say?
+      description: Copy the exact wording. Leave the percentages out if they aren't stated; "Black Friday Sale!" alone is fine.
+      placeholder: "Black Friday Sale! (no details)"
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link to the post or page (if you have it)
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Drag the image here.

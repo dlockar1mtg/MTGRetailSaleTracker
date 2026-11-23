@@ -1,1 +1,12 @@
-{"center_name":"Wichita, Kansas, USA","center_lat":37.6872,"center_lon":-97.3301,"radius_miles":300,"distance_type":"straight_line","threshold_singles_percent":30,"threshold_sealed_percent":20,"timezone":"America/Chicago"}
+{
+  "center_name": "Wichita, Kansas, USA",
+  "center_lat": 37.6872,
+  "center_lon": -97.3301,
+  "radius_miles": 300,
+  "distance_type": "straight_line",
+  "threshold_singles_percent": 30,
+  "threshold_sealed_percent": 20,
+  "timezone": "America/Chicago",
+  "near_boundary_review_miles": 10,
+  "github_notify_user": "dlockar1mtg"
+}

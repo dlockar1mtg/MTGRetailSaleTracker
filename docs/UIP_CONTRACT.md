@@ -1,11 +1,12 @@
-# UIP export contract v1.0.0
+# UIP export contract v1.1.0
 
 The tracker is a standalone upstream producer. The UIP is a downstream consumer and must not directly mutate tracker tables.
 
 Artifacts:
 - `stores_v1.csv`: verified in-radius, non-example stores with stable IDs and geographic fields.
 - `sales_v1.csv`: verified, qualifying, non-expired promotions linked to store IDs.
-- `manifest.json`: schema contract version and regional policy.
+- `events_v1.csv` (added in 1.1.0): every non-expired in-radius event with its derived state (leads included), alert kind, distance and terms version.
+- `manifest.json`: contract version, regional policy, generation time (UTC), per-file SHA-256 and row counts, coverage counts, and `status` (`registry_export_manual_sources` while there are no automated collectors: an empty `sales_v1.csv` is not evidence of no sales).
 
 Versioning: additive fields may be introduced in v1; breaking field changes require v2. Stable IDs are opaque strings. Timestamps are UTC by policy for production collectors; source-local event times must be normalized and recorded with original timezone in future schema migrations.
 

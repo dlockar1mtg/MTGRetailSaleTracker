@@ -1,0 +1,3 @@
+evidence_id,event_id,source_type,url,retrieved_on,access_status,method,confidence,summary
+ev-wa-bf26-happeningnext,wa-tulsa-black-friday-2026,event_listing,https://happeningnext.com/tulsa/black-friday,2026-11-23,ok,manual_review,medium,"Lists 'Wizards Asylum 36th Annual Black Friday Sale!!!!' on 27 Nov 2026 at 7165 S Mingo Rd, Tulsa; organizer Wizards Asylum Comics & Games; no discount terms."
+ev-tgp-bf26-calendar,tgp-el-dorado-black-friday-2026,user_screenshot,,2026-11-23,not_applicable,owner_screenshot_review,medium,"Owner's screenshot of a Facebook post by 'The Gathering Point Eldorado KS': November 2026 calendar image marks Fri Nov 27 'Black Friday Sale!'. No hours, percentages or MTG eligibility shown. Direct post URL not captured."
