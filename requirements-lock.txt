@@ -1,6 +1,6 @@
 # Exact versions for CI and the daily alert run (same as the other UIP repos on 2026-11-22).
 # Workflows apply this with PIP_CONSTRAINT; Dependabot proposes updates monthly in one grouped PR.
-duckdb==1.5.6
+duckdb==2.0.1
 iniconfig==2.3.1
 packaging==26.3
 pluggy==1.7.0
