@@ -98,6 +98,29 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     -94.190082,
+     36.178167
+    ]
+   },
+   "properties": {
+    "title": "Final Boss Games: Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "5320 W Sunset Ave STE 172, Springdale, AR",
+    "miles": 202,
+    "when": "on the page since Nov 25 (last seen Nov 25)",
+    "says": "Skip to content · Black Friday Order Reminder: · If you order online and choose to pay in store, you’ll pay the total shown at checkout. Black Friday discounts can’t be applied after you place your order. · Northwest Ark…",
+    "page": "http://FinalBossGames.com",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/7",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      -96.8622,
      37.8172
     ]
