@@ -1,15 +1,15 @@
 store_id,url,status,detail,last_checked_on,last_ok_on
 osm-n11132928710,https://www.games-workshop.com/en-US/Warhammer-Lawrence,error,HTTP 405,2026-11-25,
-osm-n11253356331,https://allstarcomicsokc.com/,error,URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)>,2026-11-25,
+osm-n11253356331,https://allstarcomicsokc.com/,error,URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)>,2026-11-25,
 osm-n12181278563,https://gamershubokc.com,error,URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)>,2026-11-25,
 osm-n12685217780,http://www.facebook.com/rockbottomcomics,skipped,not read automatically (facebook.com),2026-11-25,
 osm-n13929898901,https://tradeatapecomiccenter.com/,ok,28 text blocks,2026-11-25,2026-11-25
-osm-n14021082301,https://www.thegeekrealms.com/,ok,65 text blocks,2026-11-25,2026-11-25
+osm-n14021082301,https://www.thegeekrealms.com/,error,URLError: <urlopen error [Errno 101] Network is unreachable>,2026-11-25,2026-11-25
 osm-n14256488530,https://toysrross.com/,ok,1961 text blocks,2026-11-25,2026-11-25
-osm-n4247539063,https://theburrowstore.com/,error,URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)>,2026-11-25,2026-11-24
+osm-n4247539063,https://theburrowstore.com/,ok,21 text blocks,2026-11-25,2026-11-25
 osm-n8530517202,http://www.huscarlhobbiesandgames.com/,ok,569 text blocks,2026-11-25,2026-11-25
 osm-n8730048590,https://www.rainbowcomicsandcards.com,blocked,HTTP 403,2026-11-25,
-osm-n9289245758,https://tabletopgameandhobby.com/,ok,137 text blocks,2026-11-25,2026-11-25
+osm-n9289245758,https://tabletopgameandhobby.com/,ok,161 text blocks,2026-11-25,2026-11-25
 osm-n9396068316,https://randysroundhouse.com/,ok,39 text blocks,2026-11-25,2026-11-25
 osm-n9758116133,https://www.chopscomics.com/,ok,39 text blocks,2026-11-25,2026-11-25
 osm-w1038856922,https://www.fredstrainshop.com/,ok,52 text blocks,2026-11-25,2026-11-25
@@ -17,7 +17,7 @@ osm-w1358114281,https://www.mintygem.com/,ok,62 text blocks,2026-11-25,2026-11-2
 osm-w263174681,https://www.facebook.com/pips.dice/,skipped,not read automatically (facebook.com),2026-11-25,
 wizards-asylum-tulsa,https://www.wizardscomicsandgames.com/,error,URLError: <urlopen error [Errno -2] Name or service not known>,2026-11-25,
 wpn-10053,http://www.gzomaha.com,blocked,HTTP 403,2026-11-25,
-wpn-10127,https://spankyscardshop.com/,ok,641 text blocks,2026-11-25,2026-11-25
+wpn-10127,https://spankyscardshop.com/,ok,644 text blocks,2026-11-25,2026-11-25
 wpn-10149,https://www.yelp.com/biz/toms-card-kingdom-lawton,skipped,not read automatically (yelp.com),2026-11-25,
 wpn-10256,https://www.facebook.com/Collectomaniacs,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-10277,https://gamenut.tcgplayerpro.com/,robots,disallowed by robots.txt,2026-11-25,
@@ -34,7 +34,7 @@ wpn-12404,https://ftwgameco.com/,ok,91 text blocks,2026-11-25,2026-11-25
 wpn-12455,https://pcgameguild.carrd.co/,ok,154 text blocks,2026-11-25,2026-11-25
 wpn-12553,https://www.eclipsebookscomics.com/,ok,31 text blocks,2026-11-25,2026-11-25
 wpn-12617,https://ftwgameco.com/,ok,91 text blocks,2026-11-25,2026-11-25
-wpn-13069,https://mtechcave.com/,ok,2875 text blocks,2026-11-25,2026-11-25
+wpn-13069,https://mtechcave.com/,ok,2874 text blocks,2026-11-25,2026-11-25
 wpn-13075,http://wpn.wizards.com,skipped,not read automatically (wpn.wizards.com),2026-11-25,
 wpn-13077,https://www.facebook.com/commandergamesmonett/,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-13166,https://mushyhead.com/,ok,119 text blocks,2026-11-25,2026-11-25
@@ -43,7 +43,7 @@ wpn-13254,http://www.neverendinggamestore.com,ok,78 text blocks,2026-11-25,2026-
 wpn-13275,https://annex.games/,ok,1540 text blocks,2026-11-25,2026-11-25
 wpn-13592,http://hooverhousehobbies.com,ok,2 text blocks,2026-11-25,2026-11-25
 wpn-13612,https://mindgamesandmagic.com/,ok,298 text blocks,2026-11-25,2026-11-25
-wpn-13649,https://haven-games.com/,error,URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)>,2026-11-25,2026-11-24
+wpn-13649,https://haven-games.com/,ok,51 text blocks,2026-11-25,2026-11-25
 wpn-13749,https://www.facebook.com/HornetGames/,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-13791,http://Mimicsjc.com,ok,0 text blocks,2026-11-25,2026-11-25
 wpn-13795,https://www.facebook.com/p/Pink-Elephant-Games-and-Cafe-100039086185124/,skipped,not read automatically (facebook.com),2026-11-25,
@@ -57,7 +57,7 @@ wpn-14473,https://collectivelnk.tcgplayerpro.com/,robots,disallowed by robots.tx
 wpn-14563,https://www.facebook.com/oinkersisland,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-14574,https://www.facebook.com/brutesquadentertainment,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-14615,https://www.larrysgamestore.com/,ok,1647 text blocks,2026-11-25,2026-11-25
-wpn-14755,http://traderoutes.games,ok,305 text blocks,2026-11-25,2026-11-25
+wpn-14755,http://traderoutes.games,ok,304 text blocks,2026-11-25,2026-11-25
 wpn-14831,http://instagram.com/cafemonsteromaha,skipped,not read automatically (instagram.com),2026-11-25,
 wpn-14940,http://facebook.com/thebransondragon,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-14995,http://Goodlandgames.square.site,ok,0 text blocks,2026-11-25,2026-11-25
@@ -71,11 +71,11 @@ wpn-15603,http://www.dragons-lair.com/,ok,49 text blocks,2026-11-25,2026-11-25
 wpn-15655,https://storefront.sortswift.com/5ozknights,robots,disallowed by robots.txt,2026-11-25,
 wpn-15702,https://www.facebook.com/profile.php?id=61550483741847,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-15786,https://www.facebook.com/profile.php?id=100094130080120&mibextid=ZbWKwL,skipped,not read automatically (facebook.com),2026-11-25,
-wpn-15850,https://decksanddiceok.com/,error,URLError: <urlopen error _ssl.c:994: The handshake operation timed out>,2026-11-25,2026-11-24
+wpn-15850,https://decksanddiceok.com/,ok,104 text blocks,2026-11-25,2026-11-25
 wpn-15869,https://www.facebook.com/profile.php?id=61551427111135,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-15875,https://www.facebook.com/profile.php?id=61551904844818,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-15979,http://Facebook.com/vgpokc,skipped,not read automatically (facebook.com),2026-11-25,
-wpn-15991,http://FinalBossGames.com,ok,239 text blocks,2026-11-25,2026-11-25
+wpn-15991,http://FinalBossGames.com,ok,241 text blocks,2026-11-25,2026-11-25
 wpn-16016,http://pfcomics.com,ok,1117 text blocks,2026-11-25,2026-11-25
 wpn-16100,http://bransonboardgamecafe.com,ok,91 text blocks,2026-11-25,2026-11-25
 wpn-16224,https://www.facebook.com/ComicHoarderz?mibextid=ZbWKwL,skipped,not read automatically (facebook.com),2026-11-25,
@@ -126,7 +126,7 @@ wpn-18748,http://wpn.wizards.com,skipped,not read automatically (wpn.wizards.com
 wpn-18759,http://wpn.wizards.com,skipped,not read automatically (wpn.wizards.com),2026-11-25,
 wpn-18779,https://www.facebook.com/p/Good-Games-Good-Grub-61551009733689/,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-18973,https://www.paint-your-peace.com/,ok,1 text blocks,2026-11-25,2026-11-25
-wpn-19027,https://griffinskeep.us/,error,URLError: <urlopen error _ssl.c:994: The handshake operation timed out>,2026-11-25,2026-11-24
+wpn-19027,https://griffinskeep.us/,ok,109 text blocks,2026-11-25,2026-11-25
 wpn-19103,https://drafthouse.com/omaha/theater-bar/la-vista,ok,1 text blocks,2026-11-25,2026-11-25
 wpn-19104,https://www.facebook.com/luckyllamatcg,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-19115,https://www.instagram.com/ancienttombcardsandcomics/,skipped,not read automatically (instagram.com),2026-11-25,
@@ -137,7 +137,7 @@ wpn-19293,https://www.facebook.com/gildedfatesllc,skipped,not read automatically
 wpn-19338,https://www.facebook.com/people/Ozarks-Trading-Cards-Video-Games/61579318171830/?mibextid=wwXIfr&rdid=Ag689Bl8K4PpGU4l&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19JzVEczU2%2F%3Fmibextid%3DwwXIfr,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-19355,http://wpn.wizards.com,skipped,not read automatically (wpn.wizards.com),2026-11-25,
 wpn-19470,https://www.breakpointokc.com,ok,28 text blocks,2026-11-25,2026-11-25
-wpn-19494,http://www.schmabels.com,ok,66 text blocks,2026-11-25,2026-11-25
+wpn-19494,http://www.schmabels.com,error,URLError: <urlopen error [Errno 101] Network is unreachable>,2026-11-25,2026-11-25
 wpn-19618,https://brickandboardgames.com,ok,229 text blocks,2026-11-25,2026-11-25
 wpn-19685,https://www.facebook.com/profile.php?id=61577868194488,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-19741,https://LegendaryCrits.com,ok,81 text blocks,2026-11-25,2026-11-25
@@ -221,8 +221,8 @@ wpn-23054,https://www.gamestop.com/,skipped,not read automatically (gamestop.com
 wpn-23062,https://www.gamestop.com/,skipped,not read automatically (gamestop.com),2026-11-25,
 wpn-23197,https://www.gamestop.com/,skipped,not read automatically (gamestop.com),2026-11-25,
 wpn-23210,https://www.gamestop.com/,skipped,not read automatically (gamestop.com),2026-11-25,
-wpn-23404,https://ripandcollect.com/,ok,140 text blocks,2026-11-25,2026-11-25
-wpn-23449,http://kurtwaynecomics.com,error,TimeoutError: timed out,2026-11-25,2026-11-24
+wpn-23404,https://ripandcollect.com/,ok,141 text blocks,2026-11-25,2026-11-25
+wpn-23449,http://kurtwaynecomics.com,ok,63 text blocks,2026-11-25,2026-11-25
 wpn-23469,http://magic.wizards.com,skipped,not read automatically (wizards.com),2026-11-25,
 wpn-23472,https://www.nevermorebooksok.com/,ok,40 text blocks,2026-11-25,2026-11-25
 wpn-23542,http://Gamenut.com,ok,12 text blocks,2026-11-25,2026-11-25
@@ -238,8 +238,8 @@ wpn-23961,http://magic.wizards.com,skipped,not read automatically (wizards.com),
 wpn-24046,https://www.gamestop.com/,skipped,not read automatically (gamestop.com),2026-11-25,
 wpn-24054,https://www.gamestop.com/,skipped,not read automatically (gamestop.com),2026-11-25,
 wpn-24141,https://joshscards.com,ok,1736 text blocks,2026-11-25,2026-11-25
-wpn-24148,https://letsplaygnh.myshopify.com,ok,248 text blocks,2026-11-25,2026-11-25
-wpn-24154,https://gamersguildhall.com/,error,URLError: <urlopen error _ssl.c:994: The handshake operation timed out>,2026-11-25,2026-11-24
+wpn-24148,https://letsplaygnh.myshopify.com,ok,246 text blocks,2026-11-25,2026-11-25
+wpn-24154,https://gamersguildhall.com/,ok,78 text blocks,2026-11-25,2026-11-25
 wpn-24255,https://www.facebook.com/profile.php?id=61583165022490,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-24256,https://www.sanctuarycomicsandgames.com,ok,94 text blocks,2026-11-25,2026-11-25
 wpn-24277,https://runeworkscomics.com,ok,1110 text blocks,2026-11-25,2026-11-25
@@ -286,7 +286,7 @@ wpn-8699,https://www.grovegamersguild.com/,robots,disallowed by robots.txt,2026-
 wpn-8781,http://kryptoncomicsomaha.com/,ok,979 text blocks,2026-11-25,2026-11-25
 wpn-8793,https://www.facebook.com/MenaGameLounge/,skipped,not read automatically (facebook.com),2026-11-25,
 wpn-8819,https://www.missionboardgames.com/,ok,117 text blocks,2026-11-25,2026-11-25
-wpn-8925,http://diceaddiction.com,ok,542 text blocks,2026-11-25,2026-11-25
+wpn-8925,http://diceaddiction.com,ok,538 text blocks,2026-11-25,2026-11-25
 wpn-9047,http://www.villagegeekgames.com,ok,126 text blocks,2026-11-25,2026-11-25
 wpn-9142,http://magic.wizards.com,skipped,not read automatically (wizards.com),2026-11-25,
 wpn-9152,https://www.action-sportsgames.com/,ok,7 text blocks,2026-11-25,2026-11-25
