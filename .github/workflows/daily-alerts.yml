@@ -55,23 +55,20 @@ jobs:
         run: python -m mtg_retail.cli watch
       - name: Save what changed
         if: ${{ !inputs.dry_run }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add registry/auto
-          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
-          git commit -q -m "Store lists and page checks $(date -u +%F)"
-          for attempt in 1 2 3; do
-            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
-            sleep $((attempt * 10))
-          done
-          echo "::error::Could not push registry/auto changes"; exit 1
+        run: scripts/commit_paths.sh "Store lists and page checks $(date -u +%F)" registry/auto
       - name: Send due alerts
         env:
           GITHUB_TOKEN: ${{ github.token }}
           DRY_RUN: ${{ inputs.dry_run && '--dry-run' || '' }}
           ROUNDUP: ${{ inputs.roundup || 'auto' }}
         run: python -m mtg_retail.cli notify $DRY_RUN --roundup "$ROUNDUP"
+      - name: Rebuild the sales board (board/README.md and maps)
+        if: ${{ !inputs.dry_run }}
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python -m mtg_retail.cli board
+          scripts/commit_paths.sh "Sales board $(date -u +%F)" board
       - run: python -m mtg_retail.cli export --out output
       - uses: actions/upload-artifact@v7
         with:

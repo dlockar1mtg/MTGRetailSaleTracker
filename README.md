@@ -5,6 +5,8 @@ Tracks Magic: The Gathering retailers and their sales within **300 straight-line
 - **Singles:** at least **30%** off eligible MTG singles
 - **Sealed:** at least **20%** off eligible sealed MTG product
 
+**📍 See every current sale: [the sales board](board/)**, a table plus a map, updated every morning.
+
 It runs independently and publishes versioned exports for the Universal Investment Platform (UIP) to read later.
 
 ## Status (v0.3, Nov 2026)

@@ -11,6 +11,10 @@ GitHub Actions runners keep nothing between runs, so everything durable is plain
 | `terms.csv` | category of an event (`singles` or `sealed`) | `discount_percent` (blank if unknown), `mtg_eligible` (yes/no/unknown), conditions, exclusions, `where`, `verified` (yes/no), `terms_version` |
 | `evidence.csv` | observation | `source_type`, `url` (required except owner screenshots/reports), `retrieved_on`, `access_status`, `confidence`, summary |
 
+## The sales board
+
+`board/README.md` lists every current sale (verified, announced, found automatically) with distance, dates, the store's wording and links to the page and the alert issue. `board/sales.geojson` is the same on a map; GitHub draws it when you open the file. `board/stores.geojson` maps every known store. The daily run rebuilds all three; don't edit them by hand.
+
 ## Automatic files (registry/auto/, written by the daily workflow)
 
 | File | What | Refreshed |

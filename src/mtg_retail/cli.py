@@ -14,9 +14,9 @@ DIGEST_AT = 6          # more new automatic finds than this in one run -> one di
 
 
 def _counts(reg, assessments, cfg):
-    in_radius = {a.store.store_id for a in assessments if a.in_radius}
-    in_radius |= {s.store_id for s in reg.stores.values()
-                  if s.store_id not in {a.store.store_id for a in assessments}}  # stores with no events yet
+    from .geo import miles_between
+    in_radius = {s.store_id for s in reg.stores.values() if s.verification_status != "closed" and
+                 miles_between(cfg["center_lat"], cfg["center_lon"], s.latitude, s.longitude) <= cfg["radius_miles"]}
     return {"stores": len(reg.stores), "verified_stores": sum(s.verification_status == "verified" for s in reg.stores.values()),
             "in_radius": len(in_radius), "radius": cfg["radius_miles"],
             "collectors": _collectors(reg), "checks": _check_summary()}
@@ -191,6 +191,29 @@ def notify(dry_run: bool, roundup_mode: str, today: date | None = None) -> int:
     return 0
 
 
+def board(out: str = "board", today: date | None = None) -> int:
+    """Rebuild board/ (README table + maps) from the registry and the alert issues."""
+    import os
+    from pathlib import Path
+    from .board import build
+    from .geo import miles_between
+    cfg = config()
+    today = today or local_today(cfg)
+    reg, assessments = build_db(today=today)
+    repo = os.environ.get("GITHUB_REPOSITORY", "dlockar1mtg/MTGRetailSaleTracker")
+    issues: dict[str, int] = {}
+    if os.environ.get("GITHUB_TOKEN") and os.environ.get("GITHUB_REPOSITORY"):
+        from .github_api import GitHub
+        gh = GitHub()
+        ledger = parse_ledger(gh.tracker_issues([label[0] for label in LABELS.values()]), {})
+        issues = {event_id: state.number for (event_id, kind), state in ledger.items() if kind != "roundup"}
+    stores = [s for s in reg.stores.values() if s.verification_status != "closed" and
+              miles_between(cfg["center_lat"], cfg["center_lon"], s.latitude, s.longitude) <= cfg["radius_miles"]]
+    result = build(assessments, issues, _counts(reg, assessments, cfg), repo, today, Path(out), stores)
+    print(json.dumps(result))
+    return 0
+
+
 def main():
     p = argparse.ArgumentParser(description="MTG retailer and sale tracker")
     sub = p.add_subparsers(dest="command", required=True)
@@ -207,6 +230,7 @@ def main():
     disc = sub.add_parser("discover", help="refresh the store lists from the Wizards locator and OpenStreetMap")
     disc.add_argument("--force", action="store_true", help="run even if the last discovery is recent")
     sub.add_parser("watch", help="check stores' own pages for sales")
+    sub.add_parser("board", help="rebuild board/ (sales table and maps)")
     args = p.parse_args()
     try:
         if args.command == "init-db":
@@ -230,6 +254,8 @@ def main():
             sys.exit(discover(args.force))
         elif args.command == "watch":
             sys.exit(watch())
+        elif args.command == "board":
+            sys.exit(board())
     except RegistryError as exc:
         print(f"Registry problem: {exc}", file=sys.stderr)
         sys.exit(2)
