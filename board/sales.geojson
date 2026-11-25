@@ -1,0 +1,143 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.39057,
+     38.909384
+    ]
+   },
+   "properties": {
+    "title": "Pulp Fiction Comics & Games: 50% off · Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "836 SW Blue Pkwy, Lee's Summit, MO",
+    "miles": 180,
+    "when": "on the page since Nov 23 (last seen Nov 25)",
+    "says": "2026 · BLACK FRIDAY SALE · Buy One Get One 50% Off Storewide · Excludes Sealed MtG, Games Workshop, Local Artists, Snacks & Drinks, Event Entri...",
+    "page": "http://pfcomics.com",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.373095,
+     39.03274
+    ]
+   },
+   "properties": {
+    "title": "Gamers Getaway KC: 15-25% off · Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "17601 E US Hwy 40, Independence, MO",
+    "miles": 185,
+    "when": "on the page since Nov 23 (last seen Nov 25)",
+    "says": "$99.99 / month · 25% off almost all products · Includes tournament entry fees … $49.99 / month · 20% off almost all products · Includes tournament entry fees … $14.99 / month · 15% off almost all products · Includes tour…",
+    "page": "http://www.gamersgetawaykc.com",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -96.10713,
+     41.23254
+    ]
+   },
+   "properties": {
+    "title": "Krypton Comics - Omaha: Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "2809 S 125th St, Omaha, NE",
+    "miles": 253,
+    "when": "on the page since Nov 23 (last seen Nov 25)",
+    "says": "A heartfelt thanks to you all from all of us, and Happy Turkey Day! · THE BIG BLACK FRIDAY NEWS: · On Wednesday, November 25th, we’ll be having a Black Friday Preview Sale! · Cards/TCG section will … CLOSED · Friday, Nov…",
+    "page": "http://kryptoncomicsomaha.com/",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -98.53276,
+     33.86903
+    ]
+   },
+   "properties": {
+    "title": "Nexus Game Lounge: Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "3111 Midwestern Pkwy, Ste 520, Wichita Falls, TX",
+    "miles": 272,
+    "when": "on the page since Nov 24 (last seen Nov 25)",
+    "says": "Home · Black Friday Deals! · Nexus Live: Voices of Adventure",
+    "page": "https://www.nexusgamelounge.com/",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/6",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -96.8622,
+     37.8172
+    ]
+   },
+   "properties": {
+    "title": "The Gathering Point: terms not announced",
+    "kind": "Announced, details unknown",
+    "where": "123 N Main St, El Dorado, KS",
+    "miles": 27,
+    "when": "Fri Nov 27",
+    "says": "Owner's screenshot of a Facebook post by 'The Gathering Point Eldorado KS': November 2026 calendar image marks Fri Nov 27 'Black Friday Sale!'. No hours, percentages or MTG eligibility shown. Direct post URL not captured…",
+    "page": "",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/1",
+    "marker-color": "#d4a72c",
+    "marker-size": "large",
+    "marker-symbol": "triangle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.9928,
+     36.154
+    ]
+   },
+   "properties": {
+    "title": "Wizards Asylum Comics & Games: terms not announced",
+    "kind": "Announced, details unknown",
+    "where": "7165 S Mingo Rd, Tulsa, OK",
+    "miles": 129,
+    "when": "Fri Nov 27",
+    "says": "Lists 'Wizards Asylum 36th Annual Black Friday Sale!!!!' on 27 Nov 2026 at 7165 S Mingo Rd, Tulsa; organizer Wizards Asylum Comics & Games; no discount terms.",
+    "page": "https://happeningnext.com/tulsa/black-friday",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/2",
+    "marker-color": "#d4a72c",
+    "marker-size": "large",
+    "marker-symbol": "triangle"
+   }
+  }
+ ]
+}
