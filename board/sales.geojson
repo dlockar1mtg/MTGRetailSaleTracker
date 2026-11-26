@@ -15,7 +15,7 @@
     "kind": "Found automatically (unverified)",
     "where": "836 SW Blue Pkwy, Lee's Summit, MO",
     "miles": 180,
-    "when": "on the page since Nov 23 (last seen Nov 25)",
+    "when": "on the page since Nov 23 (last seen Nov 26)",
     "says": "2026 · BLACK FRIDAY SALE · Buy One Get One 50% Off Storewide · Excludes Sealed MtG, Games Workshop, Local Artists, Snacks & Drinks, Event Entri...",
     "page": "http://pfcomics.com",
     "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5",
@@ -38,32 +38,9 @@
     "kind": "Found automatically (unverified)",
     "where": "17601 E US Hwy 40, Independence, MO",
     "miles": 185,
-    "when": "on the page since Nov 23 (last seen Nov 25)",
+    "when": "on the page since Nov 23 (last seen Nov 26)",
     "says": "$99.99 / month · 25% off almost all products · Includes tournament entry fees … $49.99 / month · 20% off almost all products · Includes tournament entry fees … $14.99 / month · 15% off almost all products · Includes tour…",
     "page": "http://www.gamersgetawaykc.com",
-    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5",
-    "marker-color": "#0969da",
-    "marker-size": "large",
-    "marker-symbol": "circle"
-   }
-  },
-  {
-   "type": "Feature",
-   "geometry": {
-    "type": "Point",
-    "coordinates": [
-     -96.10713,
-     41.23254
-    ]
-   },
-   "properties": {
-    "title": "Krypton Comics - Omaha: Black Friday",
-    "kind": "Found automatically (unverified)",
-    "where": "2809 S 125th St, Omaha, NE",
-    "miles": 253,
-    "when": "on the page since Nov 23 (last seen Nov 25)",
-    "says": "A heartfelt thanks to you all from all of us, and Happy Turkey Day! · THE BIG BLACK FRIDAY NEWS: · On Wednesday, November 25th, we’ll be having a Black Friday Preview Sale! · Cards/TCG section will … CLOSED · Friday, Nov…",
-    "page": "http://kryptoncomicsomaha.com/",
     "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5",
     "marker-color": "#0969da",
     "marker-size": "large",
@@ -84,7 +61,7 @@
     "kind": "Found automatically (unverified)",
     "where": "3111 Midwestern Pkwy, Ste 520, Wichita Falls, TX",
     "miles": 272,
-    "when": "on the page since Nov 24 (last seen Nov 25)",
+    "when": "on the page since Nov 24 (last seen Nov 26)",
     "says": "Home · Black Friday Deals! · Nexus Live: Voices of Adventure",
     "page": "https://www.nexusgamelounge.com/",
     "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/6",
@@ -107,10 +84,56 @@
     "kind": "Found automatically (unverified)",
     "where": "5320 W Sunset Ave STE 172, Springdale, AR",
     "miles": 202,
-    "when": "on the page since Nov 25 (last seen Nov 25)",
+    "when": "on the page since Nov 25 (last seen Nov 26)",
     "says": "Skip to content · Black Friday Order Reminder: · If you order online and choose to pay in store, you’ll pay the total shown at checkout. Black Friday discounts can’t be applied after you place your order. · Northwest Ark…",
     "page": "http://FinalBossGames.com",
     "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/7",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -96.1203,
+     36.10435
+    ]
+   },
+   "properties": {
+    "title": "Rune Works Comics: 20% off · Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "18 W 41st St S, Sand Springs, OK",
+    "miles": 128,
+    "when": "on the page since Nov 26 (last seen Nov 26)",
+    "says": "BLACK FRIDAY IS LIVE: 20% OFF IN-STOCK, ONLINE & IN STORE — NOW THRU CYBER MONDAY … DEALS · ★ BLACK FRIDAY — 20% Off In-Stock · Best Sellers … Storytelling... The Original Human Pastime! · BLACK FRIDAY IS LIVE · 20% OFF …",
+    "page": "https://runeworkscomics.com",
+    "alert": "",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.913989,
+     36.10512
+    ]
+   },
+   "properties": {
+    "title": "Trade Routes: Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "5625 E 41st St, Tulsa, OK",
+    "miles": 134,
+    "when": "on the page since Nov 26 (last seen Nov 26)",
+    "says": "Please Confirm Correct Delivery Method Before Ordering · Black Friday Sneak Peek",
+    "page": "http://traderoutes.games",
+    "alert": "",
     "marker-color": "#0969da",
     "marker-size": "large",
     "marker-symbol": "circle"
