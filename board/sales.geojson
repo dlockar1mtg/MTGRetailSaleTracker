@@ -15,7 +15,7 @@
     "kind": "Found automatically (unverified)",
     "where": "836 SW Blue Pkwy, Lee's Summit, MO",
     "miles": 180,
-    "when": "on the page since Nov 23 (last seen Nov 26)",
+    "when": "on the page since Nov 23 (last seen Nov 27)",
     "says": "2026 · BLACK FRIDAY SALE · Buy One Get One 50% Off Storewide · Excludes Sealed MtG, Games Workshop, Local Artists, Snacks & Drinks, Event Entri...",
     "page": "http://pfcomics.com",
     "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5",
@@ -38,7 +38,7 @@
     "kind": "Found automatically (unverified)",
     "where": "17601 E US Hwy 40, Independence, MO",
     "miles": 185,
-    "when": "on the page since Nov 23 (last seen Nov 26)",
+    "when": "on the page since Nov 23 (last seen Nov 27)",
     "says": "$99.99 / month · 25% off almost all products · Includes tournament entry fees … $49.99 / month · 20% off almost all products · Includes tournament entry fees … $14.99 / month · 15% off almost all products · Includes tour…",
     "page": "http://www.gamersgetawaykc.com",
     "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5",
@@ -61,7 +61,7 @@
     "kind": "Found automatically (unverified)",
     "where": "3111 Midwestern Pkwy, Ste 520, Wichita Falls, TX",
     "miles": 272,
-    "when": "on the page since Nov 24 (last seen Nov 26)",
+    "when": "on the page since Nov 24 (last seen Nov 27)",
     "says": "Home · Black Friday Deals! · Nexus Live: Voices of Adventure",
     "page": "https://www.nexusgamelounge.com/",
     "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/6",
@@ -84,7 +84,7 @@
     "kind": "Found automatically (unverified)",
     "where": "5320 W Sunset Ave STE 172, Springdale, AR",
     "miles": 202,
-    "when": "on the page since Nov 25 (last seen Nov 26)",
+    "when": "on the page since Nov 25 (last seen Nov 27)",
     "says": "Skip to content · Black Friday Order Reminder: · If you order online and choose to pay in store, you’ll pay the total shown at checkout. Black Friday discounts can’t be applied after you place your order. · Northwest Ark…",
     "page": "http://FinalBossGames.com",
     "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/7",
@@ -107,10 +107,10 @@
     "kind": "Found automatically (unverified)",
     "where": "18 W 41st St S, Sand Springs, OK",
     "miles": 128,
-    "when": "on the page since Nov 26 (last seen Nov 26)",
+    "when": "on the page since Nov 26 (last seen Nov 27)",
     "says": "BLACK FRIDAY IS LIVE: 20% OFF IN-STOCK, ONLINE & IN STORE — NOW THRU CYBER MONDAY … DEALS · ★ BLACK FRIDAY — 20% Off In-Stock · Best Sellers … Storytelling... The Original Human Pastime! · BLACK FRIDAY IS LIVE · 20% OFF …",
     "page": "https://runeworkscomics.com",
-    "alert": "",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/9",
     "marker-color": "#0969da",
     "marker-size": "large",
     "marker-symbol": "circle"
@@ -130,10 +130,10 @@
     "kind": "Found automatically (unverified)",
     "where": "5625 E 41st St, Tulsa, OK",
     "miles": 134,
-    "when": "on the page since Nov 26 (last seen Nov 26)",
-    "says": "Please Confirm Correct Delivery Method Before Ordering · Black Friday Sneak Peek",
+    "when": "on the page since Nov 26 (last seen Nov 27)",
+    "says": "$314.99 · See all Magic: The Gathering Black Friday Deals … Holiday Gifts for Every Gamer · Now through Cyber Monday · Magic: The Gathering … $125.99 · CYBER MONDAY EXCLUSIVE · Trade Routes",
     "page": "http://traderoutes.games",
-    "alert": "",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/8",
     "marker-color": "#0969da",
     "marker-size": "large",
     "marker-symbol": "circle"
@@ -183,6 +183,98 @@
     "marker-color": "#d4a72c",
     "marker-size": "large",
     "marker-symbol": "triangle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.92496,
+     36.14759
+    ]
+   },
+   "properties": {
+    "title": "Dice Addiction: 20% off · Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "4622 East 11th Street, Tulsa, OK",
+    "miles": 132,
+    "when": "on the page since Nov 27 (last seen Nov 27)",
+    "says": "Dice Addiction's Black Fri... · Black Friday at Dice Addiction: 20% off all card singles, storewide. In store only. · Five sealed deals, same day:",
+    "page": "http://diceaddiction.com",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/13",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.62449,
+     36.31569
+    ]
+   },
+   "properties": {
+    "title": "FTW Game Co - Claremore: Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "1209 W Will Rogers Blvd, Claremore, OK",
+    "miles": 134,
+    "when": "on the page since Nov 27 (last seen Nov 27)",
+    "says": "Slide · Black Friday · SALE",
+    "page": "https://ftwgameco.com/",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/11",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -95.32129,
+     36.29697
+    ]
+   },
+   "properties": {
+    "title": "FTW Game Co.: Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "527 S Mill St., Pryor, OK",
+    "miles": 147,
+    "when": "on the page since Nov 27 (last seen Nov 27)",
+    "says": "Slide · Black Friday · SALE",
+    "page": "https://ftwgameco.com/",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/10",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -94.5749,
+     39.29596
+    ]
+   },
+   "properties": {
+    "title": "Let's Play! Game and Hobby: 15% off · Black Friday",
+    "kind": "Found automatically (unverified)",
+    "where": "11129 N Oak Trfy, Kansas City, MO",
+    "miles": 186,
+    "when": "on the page since Nov 27 (last seen Nov 27)",
+    "says": "Announcements · Black Friday: 15% off the whole store · Today only, in store only. Excludes loose TCG booster packs and KC Collab maker items.",
+    "page": "https://letsplaygnh.myshopify.com",
+    "alert": "https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/12",
+    "marker-color": "#0969da",
+    "marker-size": "large",
+    "marker-symbol": "circle"
    }
   }
  ]

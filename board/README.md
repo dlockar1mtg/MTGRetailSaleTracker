@@ -1,6 +1,6 @@
 # MTG sales near Wichita
 
-Updated **Thursday, November 26, 2026** by the daily run. Every current sale within 300 miles. **[Open the map](sales.geojson)** (click a pin), or the [map of all 337 stores](stores.geojson).
+Updated **Friday, November 27, 2026** by the daily run. Every current sale within 300 miles. **[Open the map](sales.geojson)** (click a pin), or the [map of all 337 stores](stores.geojson).
 
 ## 🃏 Verified MTG sales (meet the 30% singles / 20% sealed thresholds) (0)
 
@@ -13,16 +13,20 @@ _None right now._
 | **The Gathering Point** | El Dorado, KS | 27 | Fri Nov 27 | terms not announced | owner report | [#1](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/1) |
 | **Wizards Asylum Comics & Games** | Tulsa, OK | 129 | Fri Nov 27 | terms not announced | [page](https://happeningnext.com/tulsa/black-friday) | [#2](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/2) |
 
-## 🔎 Found automatically on store pages (unverified) (6)
+## 🔎 Found automatically on store pages (unverified) (10)
 
 | Store | Where | Miles | When | What | Source | Alert |
 |---|---|--:|---|---|---|---|
-| **Pulp Fiction Comics & Games** | Lee's Summit, MO | 180 | on the page since Nov 23 (last seen Nov 26) | 50% off · Black Friday | [page](http://pfcomics.com) | [#5](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5) |
-| **Gamers Getaway KC** | Independence, MO | 185 | on the page since Nov 23 (last seen Nov 26) | 15-25% off · Black Friday | [page](http://www.gamersgetawaykc.com) | [#5](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5) |
-| **Nexus Game Lounge** | Wichita Falls, TX | 272 | on the page since Nov 24 (last seen Nov 26) | Black Friday | [page](https://www.nexusgamelounge.com/) | [#6](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/6) |
-| **Final Boss Games** | Springdale, AR | 202 | on the page since Nov 25 (last seen Nov 26) | Black Friday | [page](http://FinalBossGames.com) | [#7](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/7) |
-| **Rune Works Comics** | Sand Springs, OK | 128 | on the page since Nov 26 (last seen Nov 26) | 20% off · Black Friday | [page](https://runeworkscomics.com) |  |
-| **Trade Routes** | Tulsa, OK | 134 | on the page since Nov 26 (last seen Nov 26) | Black Friday | [page](http://traderoutes.games) |  |
+| **Pulp Fiction Comics & Games** | Lee's Summit, MO | 180 | on the page since Nov 23 (last seen Nov 27) | 50% off · Black Friday | [page](http://pfcomics.com) | [#5](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5) |
+| **Gamers Getaway KC** | Independence, MO | 185 | on the page since Nov 23 (last seen Nov 27) | 15-25% off · Black Friday | [page](http://www.gamersgetawaykc.com) | [#5](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/5) |
+| **Nexus Game Lounge** | Wichita Falls, TX | 272 | on the page since Nov 24 (last seen Nov 27) | Black Friday | [page](https://www.nexusgamelounge.com/) | [#6](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/6) |
+| **Final Boss Games** | Springdale, AR | 202 | on the page since Nov 25 (last seen Nov 27) | Black Friday | [page](http://FinalBossGames.com) | [#7](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/7) |
+| **Rune Works Comics** | Sand Springs, OK | 128 | on the page since Nov 26 (last seen Nov 27) | 20% off · Black Friday | [page](https://runeworkscomics.com) | [#9](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/9) |
+| **Trade Routes** | Tulsa, OK | 134 | on the page since Nov 26 (last seen Nov 27) | Black Friday | [page](http://traderoutes.games) | [#8](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/8) |
+| **Dice Addiction** | Tulsa, OK | 132 | on the page since Nov 27 (last seen Nov 27) | 20% off · Black Friday | [page](http://diceaddiction.com) | [#13](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/13) |
+| **FTW Game Co - Claremore** | Claremore, OK | 134 | on the page since Nov 27 (last seen Nov 27) | Black Friday | [page](https://ftwgameco.com/) | [#11](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/11) |
+| **FTW Game Co.** | Pryor, OK | 147 | on the page since Nov 27 (last seen Nov 27) | Black Friday | [page](https://ftwgameco.com/) | [#10](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/10) |
+| **Let's Play! Game and Hobby** | Kansas City, MO | 186 | on the page since Nov 27 (last seen Nov 27) | 15% off · Black Friday | [page](https://letsplaygnh.myshopify.com) | [#12](https://github.com/dlockar1mtg/MTGRetailSaleTracker/issues/12) |
 
 <details><summary>What each store's page says</summary>
 
@@ -31,7 +35,11 @@ _None right now._
 - **Nexus Game Lounge**, Wichita Falls: “Home · Black Friday Deals! · Nexus Live: Voices of Adventure”
 - **Final Boss Games**, Springdale: “Skip to content · Black Friday Order Reminder: · If you order online and choose to pay in store, you’ll pay the total shown at checkout. Black Friday discounts can’t be applied after you place your order. · Northwest Ark…”
 - **Rune Works Comics**, Sand Springs: “BLACK FRIDAY IS LIVE: 20% OFF IN-STOCK, ONLINE & IN STORE — NOW THRU CYBER MONDAY … DEALS · ★ BLACK FRIDAY — 20% Off In-Stock · Best Sellers … Storytelling... The Original Human Pastime! · BLACK FRIDAY IS LIVE · 20% OFF …”
-- **Trade Routes**, Tulsa: “Please Confirm Correct Delivery Method Before Ordering · Black Friday Sneak Peek”
+- **Trade Routes**, Tulsa: “$314.99 · See all Magic: The Gathering Black Friday Deals … Holiday Gifts for Every Gamer · Now through Cyber Monday · Magic: The Gathering … $125.99 · CYBER MONDAY EXCLUSIVE · Trade Routes”
+- **Dice Addiction**, Tulsa: “Dice Addiction's Black Fri... · Black Friday at Dice Addiction: 20% off all card singles, storewide. In store only. · Five sealed deals, same day:”
+- **FTW Game Co - Claremore**, Claremore: “Slide · Black Friday · SALE”
+- **FTW Game Co.**, Pryor: “Slide · Black Friday · SALE”
+- **Let's Play! Game and Hobby**, Kansas City: “Announcements · Black Friday: 15% off the whole store · Today only, in store only. Excludes loose TCG booster packs and KC Collab maker items.”
 
 </details>
 
